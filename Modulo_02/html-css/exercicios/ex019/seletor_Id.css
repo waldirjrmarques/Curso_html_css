@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/*
+    em HTML é (id) = em CSS é (#)
+    em HTML é (class) = em CSS é (.)
+
+    obs: Não se usa Id para configurar dos elemrntos (teg), Se usa a class.
+    obs: o nome das classe devem ser dada pela sua funçao.
+    obs: nao colocar acentuação nos nomes das class e id
+    obs: pode se usar mais de uma class em um elemento (teg)
+    obs: pode usar um id e uma classe no memso elemento (teg)
+
+*/
+
+
+body {
+    background-color: rgb(180, 223, 138);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#principal {
+    text-align: center;
+    background-color: rgb(28, 54, 2);
+    color: cornsilk;
+
+}
+h1 {
+    color: rgb(34, 65, 4);
+}
+
+h2 {
+    color: rgb(78, 128, 28);
+}

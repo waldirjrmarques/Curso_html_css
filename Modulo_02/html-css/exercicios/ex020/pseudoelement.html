@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo class
+            :: = pseudo element
+            > = clilder - filho
+        */
+        main {
+            
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;  /*cor padrao */
+            text-decoration: none;/*tirar o underline padrao */
+            font-weight: bold;/*colocar a letra mias forte */
+        }
+                
+                            /*PSEUDO-CLASS*/
+
+         a:visited {
+            /*Quando o link  estiver sido visitado faça*/
+            color: royalblue;
+            
+        }
+       
+        a:hover {
+            /*Quando passar o Mouse por cima do link faça*/
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active{
+            /*Quando clicar no link fique com a cor */
+            color: chartreuse;
+        }
+
+        .especial {
+            /*marcar texto */
+            background-color: rgb(243, 239, 0);
+        }
+        
+                        /*PSEUDO-ELEMENTO */
+        
+        a::before {
+            /* alterar antes do conteudo*/
+            content: '✨ ';
+        }
+        
+        a::after {
+             /* alterar depois do conteudo*/
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizar Links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara" target="_blank" class="especial">Repositório GitHub</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank" class="especial">Site Curso  em video</a></li>
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/exercicios"target="_blank">Exercícios HTML</a></li>
+    </ul>
+</body>
+</html>

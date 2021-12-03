@@ -1,0 +1,29 @@
+@charset "UTF-8"; 
+
+
+main {
+    background-color: rgb(245, 236, 236); 
+    border-radius: 10px; 
+    box-shadow: 5px 5px 15px rgba(218, 165, 152, 0.925); 
+    width: 600px; 
+    padding: 50px; 
+    margin: auto; 
+}
+
+h1 {
+    font-family:'Times New Roman', Times, serif; 
+    color: brown;
+    font-size:30px ; 
+ }
+
+
+
+ /*Teste com fonte GOOGLE FONTS*/ 
+/* CSS externo*/
+p {
+    font-family: 'Josefin Slab', serif;
+
+    font-family: 'Limelight', cursive;
+    
+}
+

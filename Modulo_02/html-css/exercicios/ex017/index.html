@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body {
+        font-family: Arial, Helvetica, sans-serif; /*Tipo de Fonte/letra*/
+        color: black;
+        }
+    main {
+        background-color: rgb(245, 236, 236); /*  cor de fundo*/
+        border-radius: 10px; /* borda arredondadas da main */
+        box-shadow: 5px 5px 15px rgba(218, 165, 152, 0.925); /* sombra */
+        width: 600px; /* largura do main */
+        padding: 50px; /* margens do main em relaçao ao texto */
+        margin: auto; /*centralizar o main */
+    }
+    h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*Tipo de letra*/
+        color: rgb(243, 70, 2);  /*Cor de letra*/
+        font-size: 2.5em;  /*Tamanho de letra (em) USAR ESSE PADRAO*/    
+    }
+    h2 {
+        font-family: 'Times New Roman', Times, serif; /*Tipo de Fonte/letra*/
+        color: brown;
+        font-size:30px ;  /*Tamanho de letra (px)*/
+        
+        /* 16px é o tamanho padrao */
+        /* 16px é = 1em */
+        /* 32px é = 2em */
+    }
+   
+
+
+                /*Tipo de Fonte do paragrafo*/
+    p {
+        font-family: 'Courier New', Courier, monospace; /*Tipo de Fonte/letra*/
+        font-style: italic; /*Aplica itálico*/
+        font-weight: lighter; /* Aplica Negrito*/    
+    }
+                
+    
+                /*Alinhamento do Texto  e Personalização*/
+    #text1 {
+        text-align: left; /*Alinhamento do texto ESQUERDA*/
+        
+        text-indent: 30px; /*Afasta para a direita o inicio do paragrafo*/
+        
+        text-decoration: underline; /* Aplica Sublinhado*/
+    }
+    #text2 {
+        text-align: right; /*Alinhamento do texto DIREITA*/  
+
+    }
+    #text3 {
+        text-align: center; /*Alinhamento do texto CENTRO*/    
+    }
+    #text4 {
+        text-align: justify; /*Alinhamento do texto JUSTIFICADO / MONOESPAÇADA/ alinhada nas bordas*/
+    }
+    
+    
+    
+    /* Usando SHORTHAND / Maozinha/ Abreviação de Declaração*/
+    /* ordem de declaraçao 
+            
+        1-  font-style: italic;
+        2-  font-weight: bolder;
+        3-  font-size: 3em;
+        4-  font-family: 'Courier New', Courier, monospace;;
+    */
+    #text5 {
+        font:italic bolder 1.5em 'Courier New', Courier, monospace;
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Site de Exemplo</h1>
+        <h2>Título 1</h2>
+        <p id="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea reprehenderit dolorem obcaecati vitae, ipsam nisi nostrum facilis omnis praesentium harum provident deserunt veniam aspernatur quidem labore, a corrupti. Non, qui!</p>
+        <p id="text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident adipisci soluta ad reprehenderit sint. Dolore sunt mollitia ipsam laborum earum ad quibusdam assumenda cumque laboriosam, voluptatibus voluptate ut iste recusandae.</p>
+
+        <h2>Título 2</h2>
+        <p id="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia magnam a veritatis, molestias maiores aperiam nisi, laudantium velit adipisci commodi, quas optio fugiat quo voluptatibus doloremque temporibus modi autem eius.</p>
+        <p id="text2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, exercitationem quis eligendi consequatur asperiores consectetur fuga harum neque delectus vero commodi, optio nostrum libero architecto ratione sapiente quibusdam id eos!</p>
+
+        <h2>Título 3</h2>
+        <p id="text3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium illum fuga fugit illo saepe quo voluptatibus voluptates debitis atque libero possimus accusantium, consequatur itaque? Accusantium ipsum ut soluta. Sequi, consequatur.</p>
+        <p id="text3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa distinctio blanditiis reiciendis quisquam veniam sequi iure corporis rem natus. Harum sequi aperiam voluptate iure rem reprehenderit fugit molestias cupiditate enim.</p>
+
+        <h2>Título 4</h2>
+        <p id="text4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium illum fuga fugit illo saepe quo voluptatibus voluptates debitis atque libero possimus accusantium, consequatur itaque? Accusantium ipsum ut soluta. Sequi, consequatur.</p>
+        <p id="text4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa distinctio blanditiis reiciendis quisquam veniam sequi iure corporis rem natus. Harum sequi aperiam voluptate iure rem reprehenderit fugit molestias cupiditate enim.</p>
+
+
+       
+
+        <h2>Título 5</h2>
+        <p id="text5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium illum fuga fugit illo saepe quo voluptatibus voluptates debitis atque libero possimus accusantium, consequatur itaque? Accusantium ipsum ut soluta. Sequi, consequatur.</p>
+        <p id="text5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa distinctio blanditiis reiciendis quisquam veniam sequi iure corporis rem natus. Harum sequi aperiam voluptate iure rem reprehenderit fugit molestias cupiditate enim.</p>
+        
+        
+        
+    </main>
+</html>

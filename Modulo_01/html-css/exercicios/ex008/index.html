@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de texto</title>
+</head>
+<body>
+    <h1>Capítulo 8 - Formatação de Texto /  Negrito e Itálico do jeito certo.</h1>
+    <hr>
+
+    <h1>Principais Formatações.</h1>
+    
+    <h2>Negrito / Destaque</h2>
+    
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag B (não semântica).</p>
+    <p>Nesta frase, temos um <strong>termo em destaque</strong> usando a teg STRONG (semântico). </p>
+    
+    <h2>Itálico / Ênfase</h2>
+    
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não semântico).</p>
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântico).</p>
+
+    <p>Teste para marcar uma frase ou palavra usando a TEG MARK como se tivesse usando um caneta marca texto</p>
+    <p><mark>Lorem ipsum dolor sit amet consectetur adipisicing elit.</mark></p><!--para mudar a cor de marcação da caneta deve ser feito com CSS-->
+    
+    <H2>Teste com a teg BIG (deixa o texto grande)</H2> <!--teg em desuso-->
+    
+    <p><big>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</big></p><!--teg obsoleta-->
+    
+    <H2>Teste com a teg SMALL (deixa o texto pequeno)</H2>
+    
+    <p>teste da teg small <small>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</small></p>
+    
+    <h2>Texto Deletado</h2>
+    
+    <p>Teste com teg strike </p> <!--teg está em desuso-->
+    <P><strike>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </strike></P><!--teg obsoleta-->
+    
+    <p>Texto com a teg del (semântico) </p>
+    <p><del>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</del></p><!--teg em uso -->
+
+    <h2>Texto Inserido (Sublinhar) </h2>
+
+    <p>teste com teg INS</p><!--teg em uso -->
+    <p><ins>Lorem ipsum dolor sit amet consectetur adipisicing elit. </ins></p>
+
+    <h2>Texto Sobreescrito e Subscrito</h2>
+
+    <p>Teste com a teg SUB (Sobreescrito)</p>
+    <P>X<sub>2</sub></P>
+
+    <p>Teste com a teg SUP (Subscrito)</p>
+    <P>X<sup>2</sup></P>
+
+    <h2>Trechos de Código</h2>
+
+    <p>Teste com a teg CODE</p>
+    <p>Exemplo de Código Phyton</p>
+    <code>
+        num = int(input('Digite um número'))
+        if num % 2 == 0:
+            print(f'O número {num} é PAR')
+        else:
+            print(f'O número {num} é ÍMPAR')
+        print('Fim do programa')  
+    </code>
+
+    <p>Teste com a teg CODE/PRE</p>
+    <code>
+        <pre>
+            num = int(input('Digite um número'))
+            if num % 2 == 0:
+                print(f'O número {num} é PAR')
+            else:
+                print(f'O número {num} é ÍMPAR')
+            print('Fim do programa')
+        </pre>  
+    </code>
+    
+    <h2>Citações</h2>
+    
+    <p>Teste com a teg Q  (sitaçôes)</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <q>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt omnis voluptatibus, provident nobis sed mollitia placeat numquam minus ipsa officia sint quam, nihil perspiciatis, aspernatur voluptatem dolore. Modi, aut dolores!</q></p>
+
+    <p>Teste com a teg BLOCKQUOTE</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <blockquote cite="https://github.com/gustavoguanabara/html-css/tree/master/exercicios/modulo-01"> Rem odit quos sint minus laborum at id reprehenderit? Minus, dolore error, architecto, aspernatur asperiores praesentium illum quidem voluptates ducimus nostrum reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, doloremque sit. Blanditiis ad quam et maiores commodi iure nam laudantium repellendus, expedita dolores explicabo vero aut officia earum aspernatur magnam! </blockquote></p>
+
+    <h2>Abreviações</h2>
+    <p>Tste de abreviação com a teg ABBR</p>
+    <p>Eu estou <abbr title="Hyper Text  Markup Language">HTML</abbr> para criar sites.</p>
+
+    <h2>ODITREVNI OTXET = TEXTO INVERTIDO</h2>
+    <p>Este texto todo está invertido no formato RIGHT-TO-LEFT</p>
+    <p>Teste com a teg BDO dir=rtl</p><!--righr-to-left (da direita para esquerda)-->
+    <bdo dir="rtl">Este texto todo está invertido no formato RIGHT-TO-LEFT</bdo>
+
+</body>
+</html>

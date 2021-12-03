@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(64, 64, 233);
+        }
+        main {
+            border: solid;
+            height: 700px; /* altura */
+            width: 1500px; /* largura */
+            margin: auto; /* centralizar tag*/
+            margin-top: 50px;
+            background-color:  rgb(148, 148, 238);
+        }
+        div {
+            display: inline-flex; 
+            margin-top: 50px;
+            margin-left: 20px;
+            
+        }
+        #div1{
+            margin-top:  ; /* margem superior */
+            margin-right: ; /*margem direita */
+            margin-bottom: ; /*margem inferior*/
+            margin-left:; /*margem esquerda */
+        }
+        #div2{
+            margin:;
+            margin-top:  ; /* margem superior */
+            margin-right: ; /*margem direita */
+            margin-bottom: ; /*margem inferior*/
+            margin-left:; /*margem esquerda */
+            
+        }
+        #div3{
+            margin-top:; /* margem superior */
+            margin-right: ; /*margem direita */
+            margin-bottom:; /*margem inferior*/
+            margin-left:; /*margem esquerda */
+        }
+         
+        h1 {
+            margin:10px; /* afastamento da caixa em relaçao ao bady */
+            padding: 20px;/* espaço entre a caixa e o texto  */
+            border: 3px solid;  /* borda */
+            border-radius: 10px /*canto esquerdo superior*/  20px /*canto direito superior*/ 30px /*canto direito inferiror*/ 40px; /*canto esquerdo inferiror*/
+            height: 500px; /* altura */
+            width: 400px; /* largura */
+            background-color: rgb(182, 182, 212); /* cor de fundo */
+            
+            
+            /* sombreamento da caixa */
+            box-shadow: 10px /*deslocamento p/ esquerda*/ 20px /*deslocamento p/ baixo */ 10px /*enbaçamento da sombra*/ rgba(0, 0, 0, 0.534); /*cor da sobra*/ 
+        }
+        h1:hover {
+            /* estado do elemento/comportamento */
+            background-color: rgb(136, 173, 241);
+        }
+
+        p { 
+            font-family: Arial, Helvetica, sans-serif; /*  familia da letra */
+            text-align: justify;/* tipo de alinhamento da letra  */
+            font-size: 16px; /* tamanho da letra */
+            color: rgb(0, 0, 0);  /*cor da letra*/    
+        }
+        span {
+            background-color: rgb(129, 247, 12);  /* cor de fundo da teg */
+        }
+
+        span:hover {
+            background-color: rgb(24, 10, 219);  /* cor de fundo da teg */
+
+        }
+        
+        mark {
+           background-color: rgb(199, 199, 230);  /* cor de fundo da teg */
+           
+        }
+
+        a {
+            text-decoration: none; /* dirar o underline como padrao de link */  
+        }
+
+        a:visited {
+            /*Quando o link  estiver sido visitado faça*/
+            color: rgb(12, 73, 241);
+        }
+
+        a:hover {
+            /*Quando passar o Mouse por cima do link faça*/
+            text-decoration: underline;
+            color: rgb(240, 0, 0);    
+        } 
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div id="div1">
+            <h1><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur nobis reprehenderit facere. Ut deserunt quae, nesciunt aspernatur id at modi iure sit placeat saepe, voluptas fugit, facere beatae eveniet molestiae. Lorem, ipsum dolor <span>sit amet consectetur adipisicing elit. Similique totam quisquam eius vitae praesentium quo repellendus,</span> modi commodi nobis! Quas quisquam harum hic deleniti qui voluptas illo, commodi labore aspernatur? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                <mark> <a href="https://github.com/gustavoguanabara" target="_blank">Hic enim officiis consectetur possimus accusantium, laudantium, suscipit numquam quod provident perferendis veniam amet vel asperiores,</a></mark>
+            </a> harum consequatur magnam labore illum maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, sed explicabo ab incidunt adipisci quam rem distinctio alias quo, necessitatibus expedita animi aut aspernatur at dolores sequi, maiores minima modi.</p></h1>
+        </div>
+        <div id="div2">
+            <h1><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur nobis reprehenderit facere. Ut deserunt quae, nesciunt aspernatur id at modi iure sit placeat saepe, voluptas fugit, facere beatae eveniet molestiae. Lorem, ipsum dolor <span>sit amet consectetur adipisicing elit. Similique totam quisquam eius vitae praesentium quo repellendus,</span> modi commodi nobis! Quas quisquam harum hic deleniti qui voluptas illo, commodi labore aspernatur? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                <mark> <a href="https://github.com/gustavoguanabara" target="_blank">Hic enim officiis consectetur possimus accusantium, laudantium, suscipit numquam quod provident perferendis veniam amet vel asperiores,</a></mark>
+            </a> harum consequatur magnam labore illum maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, sed explicabo ab incidunt adipisci quam rem distinctio alias quo, necessitatibus expedita animi aut aspernatur at dolores sequi, maiores minima modi.</p></h1>
+        </div>
+
+        <div id="div3">
+            <h1><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur nobis reprehenderit facere. Ut deserunt quae, nesciunt aspernatur id at modi iure sit placeat saepe, voluptas fugit, facere beatae eveniet molestiae. Lorem, ipsum dolor <span>sit amet consectetur adipisicing elit. Similique totam quisquam eius vitae praesentium quo repellendus,</span> modi commodi nobis! Quas quisquam harum hic deleniti qui voluptas illo, commodi labore aspernatur? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                <mark> <a href="https://github.com/gustavoguanabara" target="_blank">Hic enim officiis consectetur possimus accusantium, laudantium, suscipit numquam quod provident perferendis veniam amet vel asperiores,</a></mark>
+            </a> harum consequatur magnam labore illum maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, sed explicabo ab incidunt adipisci quam rem distinctio alias quo, necessitatibus expedita animi aut aspernatur at dolores sequi, maiores minima modi.</p></h1>
+        </div>
+    </main>
+</body>
+</html>

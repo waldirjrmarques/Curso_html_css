@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos  de Caixas - Box level /  Inline-level</title>
+    <style>
+
+        /*  Box level*/
+        h1 {
+            background-color: rgb(141, 184, 141);
+            height: 300px;
+            width: 300px;
+            
+            border-width: 10px;
+            border-style: solid;
+            border-color: deeppink;
+
+            padding-top: 10px; /*padding cima*/
+            padding-right: 10px; /*padding direira*/
+            padding-bottom: 10px; /*padding baixo*/
+            padding-left: 10px; /*padding esquerda*/
+            /*shorthand / Simplificando 
+    
+                padding: 10px 10px 10px 10px;
+                ou
+                padding: 10px;
+                ou
+                padding: 10px(cima e baixo) 10px; (direita e esquerda)
+                ou
+                padding 10px(cima) auto(direita) 10px (baixo) auto; (esquerda)
+            
+            */
+            
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            /* margin: auto;- centraliza a caixa */ 
+            /*shorthand / Simplificando 
+                margin: 10px 10px 10px 10px;
+                ou
+                margin: 10px;
+                ou
+                margin: 10px(cima e baixo) 10px; (direita e esquerda)
+                ou
+                margin 10px(cima) auto(direita) 10px (baixo) auto; (esquerda)
+            
+            */
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: gold;
+            /*shorthand / Simplificando 
+                
+                outline: 5px dashed gold;
+            */
+        }   
+        /*  Inline-level*/
+        a {
+            border-width: 5px;
+            border-style: solid;
+            border-color: gold;
+            /*shorthand / Simplificando 
+                
+                border: 5px solid gold;
+            */
+
+            padding-top: 10px; /*padding cima*/
+            padding-right: 10px; /*padding direira*/
+            padding-bottom: 10px; /*padding baixo*/
+            padding-left: 10px; /*padding esquerda*/     
+        }
+        /* 
+            para mudar de inline-level para box-level coloca-se
+
+            display;block;
+
+            para mudar de box-level para inline-level coloca-se
+
+            display;inline;
+            
+        */
+    </style>
+</head>
+<body>
+    <h2>Tipos  de Caixas - Box-level /  Inline-level</h2>
+    <hr>
+
+
+    <h1>Exemplo de caixa Box-Level</h1>
+    <p>Parágrafo também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level.</a>Vamos ver como tudo isso funciona</p>
+</body>
+</html>

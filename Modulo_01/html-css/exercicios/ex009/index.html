@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Capítulo 9 - listas Ordenadas e Lista não Ordenadas</h1>
+    <hr>
+
+    <h1>Lista Ordenadas (OL)</h1><!--lista onde deve ter um ordenamento/ seguencia EX: receita culinaria 
+    -->
+    
+    <ol  type="1"> <!--tipos de type 1,A,a,I,i-->
+        <p>Tarefas ao acordar</p>
+        <li>Acordar</li>
+        <li>Tommar Banho</li>
+        <li>Fazer Café</li>
+        <li>Escovar os Dente</li>
+        <li>Ir para o Trabalho</li>
+    </ol>
+    
+    <ol type="A"> 
+        <p>Tarefas ao acordar</p>
+        <li>Acordar</li>
+        <li>Tommar Banho</li>
+        <li>Fazer Café</li>
+        <li>Escovar os Dente</li>
+        <li>Ir para o Trabalho</li>
+    </ol>
+
+    <ol  type="a"> 
+        <p>Tarefas ao acordar</p>
+        <li>Acordar</li>
+        <li>Tommar Banho</li>
+        <li>Fazer Café</li>
+        <li>Escovar os Dente</li>
+        <li>Ir para o Trabalho</li>
+    </ol>
+
+    <ol type="I"> 
+        <p>Tarefas ao acordar</p>
+        <li>Acordar</li>
+        <li>Tommar Banho</li>
+        <li>Fazer Café</li>
+        <li>Escovar os Dente</li>
+        <li>Ir para o Trabalho</li>
+    </ol>
+
+    <ol type="i"> 
+        <p>Tarefas ao acordar</p>
+        <li>Acordar</li>
+        <li>Tommar Banho</li>
+        <li>Fazer Café</li>
+        <li>Escovar os Dente</li>
+        <li>Ir para o Trabalho</li>
+    </ol>
+    
+    <h1>Misturando Listas Ordenadas  (OL)</h1>
+    <p>Minhas linguagens favoritas</p>
+    <ol>
+        <li>Antigas</li>
+            <ol type="a" >
+                <li>Clipper</li>
+                <li>Visual Bsasic</li>
+                <li>Fortran</li>
+                <li>Delphi</li>
+            </ol>
+        <li>Novas</li>
+            <ol  type="a" start="5">
+                <li>PHP</li>
+                <li>Phyton</li>
+                <li>JavaScript</li>
+                <li>Kotlin</li>
+            </ol>
+    </ol>
+    
+    
+    <h1>Lista não Ordenada (UL) </h1><!--Lista não precisa de ordenamento/sequencia ex:Lista de supermercado -->
+    <ul type="square"><!--tipos de type square, circle, disc-->
+        <p>Lista de Supermercado  </p>
+        <li >Leite</li>
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Carne</li>
+        <li>Frango</li>
+        <li>Peixe</li>
+    </ul>
+
+    <ul type="circle">
+        <p>Lista de Supermercado  </p>
+        <li >Leite</li>
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Carne</li>
+        <li>Frango</li>
+        <li>Peixe</li>
+    </ul>
+
+    <ul type="disc">
+        <p>Lista de Supermercado  </p>
+        <li >Leite</li>
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Carne</li>
+        <li>Frango</li>
+        <li>Peixe</li>
+    </ul> 
+
+    <h1>Misturando Lista Ordenada com Não Ordenada (OL c/ UL)</h1>
+    <p>Meus jogos favoritos</p>
+    <ol>
+        <li>NES</li>
+        <ul><!--tipos de type  circle como padrão-->
+            <li>Mario Bros</li>
+            <ul type="square">
+                <li>Mario Bros3</li>
+                <li>Mario: Lost levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+
+        <li>SNES</li>
+        <ul>
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+
+        <li>PlayStation</li>
+        <ul>
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+
+    <h1>Lista de Definição</h1>
+    <dl><!--Definition List-->
+        <dt>HTML</dt><!--Definition Term-->
+        <dd>Linguagem de marcaçao para ciração de conteúdo de um site.<dd><!--Definition-->
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de Programação para a criação de interatividade de um site.</dd>
+
+    </dl>
+</body>
+</html>

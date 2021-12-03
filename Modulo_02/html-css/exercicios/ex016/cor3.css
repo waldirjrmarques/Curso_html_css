@@ -1,0 +1,35 @@
+@charset "UTF-8"; /* padrao em todo arquivo CSS */
+
+*{ /*Configuração Globais das CSS */
+    font-family: Arial, Helvetica, sans-serif; /*tipo de letra e fonte */
+    /*height: 100%;*/
+}
+ body { /* direçao do degrade (to right), (to left), (to top),(to bottom)  */
+        background-image: linear-gradient(to right,rgb(197, 227, 247),rgb(28, 28, 248)); /* cor do corpo do site  */
+ }
+ main {
+     background-color: rgb(255, 255, 255); /*  cor de fundo*/
+     border-radius: 10px; /* borda arredondadas da main */
+     box-shadow: 5px 5px 15px rgba(10, 10, 131, 0.925); /* */
+     width: 600px; /* largura do main */
+     padding: 50px; /* margens do main em relaçao ao texto */
+     margin: auto; /*centralizar o main */
+     
+ }
+h1 {
+    font-size: 40px;/* tamanho da letra*/
+    font-family: Arial serif ; /*fonte serifada*/
+    color: #453aad; /* cor da letra */
+    text-align: center; /* centralizar texto */
+    text-shadow: 1px 1px 3px  #102069; /*sombreamento */
+}
+
+h2 {
+   color: #388BD9; /* cor da letra */
+   
+   text-shadow: 1px 1px 2px #0c365e; /*sombreamento */
+}
+ p {
+    text-align: justify;  /* ajustar texto */
+    
+ }
