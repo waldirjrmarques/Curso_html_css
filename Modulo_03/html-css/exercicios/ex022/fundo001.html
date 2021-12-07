@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-image: url("imagens/wallpaper001.jpg");
+        }
+        .quadrado{
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+        }
+        #q1{
+            background-color: skyblue;
+        }
+        #q2{
+            background-image: linear-gradient(to bottom,yellow, red);
+        }
+        #q3{
+            background-image: url("imagens/pattern003.png");
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="quadrado" id="q1" onMouseOver="clicar1()" onmouseout="sair1()">
+
+    </div>
+    <div class="quadrado"  id="q2" onMouseOver="clicar2()" onmouseout="sair2()">
+
+    </div>
+    <div class="quadrado" id="q3" onMouseOver="clicar3()" onmouseout="sair3()">
+
+    </div>
+    <script>
+        /*
+        3 maneiras de colocar imagens em uma div
+        */
+        function clicar1() {
+           let imagem01 = document.getElementById(`q1`)
+           imagem01.style.background = 'blue'  
+        }
+        function clicar2() {
+            let imagem02 = document.getElementById(`q2`) 
+            imagem02.style.background = 'red'
+        }
+        function clicar3() {
+            let imagem03 = document.getElementById(`q3`)
+            imagem03.style.background = `url("imagens/pattern006.png")`
+        }
+
+        function sair1() {
+           let imagem01 = document.getElementById(`q1`)
+           imagem01.style.background = 'skyblue'  
+        }
+        function sair2() {
+            let imagem02 = document.getElementById(`q2`) 
+            imagem02.style.backgroundImage = 'linear-gradient(to bottom,yellow,red)'
+        }
+        function sair3() {
+            let imagem03 = document.getElementById(`q3`)
+            imagem03.style.backgroundImage = 'url("imagens/pattern005.png")'
+        }
+    </script>
+</body>
+</html>
