@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;/*alinhamento horizontal*/
+            vertical-align:middle;/*alinhamento vertical / top,middle,bottom*/    
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+       <!--
+           Hierarquia de tabela (simples)
+           table = tabela
+                table row =  linha da tabela
+                    table header =  cabeçalho de tabela
+                    table data  =  dado de tabela 
+        ex:                  
+       -->  
+    <table>
+        <tr><!--Primeira linha-->
+            <td>A1</td><!--Primeiro dado da primeira coluna da primeira linha-->
+            <td>B1</td><!--Segundo dado segunda coluna da primeira linha-->
+            <td>C1</td><!--terceiro dado da terceira coluna da primeira linha-->
+        </tr>
+        <tr><!--Segunra linha-->
+            <td>A2</td><!--Primeiro dado da primeira coluna da segunda linha-->
+            <td>B2</td><!--Segundo dado segunda coluna da segunda linha-->
+            <td>C2</td><!--terceiro dado da terceira coluna da segunda linha-->
+        </tr>
+        <tr><!--Terceira  linha-->
+            <td>400</td><!--Primeiro dado da primeira coluna da terceira linha-->
+            <td>B3</td><!--Segundo dado segunda coluna da terceira linha-->
+            <td>C3</td><!--terceiro dado da terceira coluna da terceira linha-->
+        </tr>
+        <tr><!--Quarta  linha-->
+            <td>A1</td><!--Primeiro dado da primeira coluna da quarta linha-->
+            <td>B3</td><!--Segundo dado segunda coluna da quarta linha-->
+            <td>C3</td><!--terceiro dado da terceira coluna da quarta linha-->
+        </tr>
+    </table>
+    <!--
+        Obs01: O fechamento das tgs (tr e td) é opcional.
+        
+        Obs02: se nao abrir a tag  (tr e td) e colocar dados vai identificar por padrao como linha no html e vai aparecer ou no inicio ou final da tabela.
+       
+        Obs03: tabelas furam feitas para organizar dados  dentro de um site  / tabelas nao foram feitas para criar sites. 
+
+        Obs04: por padrao quando se coloca numero nos dados ele alinha a esquerda, devece criar uma classe ou id para ajustar com css
+
+        Obs05:As tabelas tem tegs semanticas 
+
+        Obs06: Se for titulo se usa th, Se for dados se usa td 
+
+    -->
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tabelas grandes</title>
+    <style>
+       body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            /*height: 100px;*/
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgred;
+        }
+        tbody > tr:nth-child(even){/*efeito zebrado na tabela (configurar o salto em ex (2n) ou (odd =  inpar)ou (even =  par)) */
+            background-color:lightgray;
+        }
+        tbody > tr:nth-child(odd){/*efeito zebrado na tabela (configurar o salto em ex (2n) ou (odd =  inpar)ou (even =  par)) */
+            background-color:rgba(93, 135, 226, 0.397);
+
+        }
+        th{
+            background-color: gray;
+            color: white;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;/*alinhamento horizontal*/
+            vertical-align:middle;/*alinhamento vertical / top,middle,bottom*/    
+        }
+        .num{
+            text-align: right;
+        }
+        #resp{
+            text-align: right;
+        }
+        tfoot > tr > td {
+            background-color: gray;
+            color: rgb(233, 233, 236);
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+     <!--
+           Hierarquia de tabela (simples)
+           table = tabela
+                table row =  linha da tabela
+                    table header =  cabeçalho de tabela
+                    table data  =  dado de tabela                   
+       --> 
+     <!--
+           Anatomia para tabelas grandes
+           table
+                caption 
+                header 
+                    tr, td, th
+                tbody
+                    tr, td, th
+                tfoot
+                    tr, td, th    
+                         
+       -->  
+       <!--
+           <th scope="col"> se usa quando os dados entao na mesma coluna da tabela 
+           <th scope="row"> se usa quando os dados estoa na mesma linha da tabela
+        -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th> <!---->
+                <th scope="col" style="width: 60px;">População</th> <!--usando css local para alterar a laugura da coluna populaçao-->
+            </tr>
+        </thead>    
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num" id="n_sp"></td>
+                </tr>
+                <tr>
+                    <td> Minas Gerais</td>
+                    <td class="num" id="n_mg"></td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num" id="n_rj"></td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num" id="n_ba"></td>
+                </tr>
+            </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td id="resp"></td>
+            </tr>
+        </tfoot>
+    </table>  
+
+    <script>
+        let txtsp = window.document.getElementById('n_sp')
+            txtsp = Number(46649132)
+            n_sp.innerHTML = `${txtsp.toLocaleString('pt-br')}`
+    
+        let txtmg = window.document.getElementById('n_mg')
+            txtmg = Number(21411923)
+            n_mg.innerHTML = `${txtmg.toLocaleString('pt-br')}`
+        
+        let txtrj = window.document.getElementById('n_rj')
+            txtrj = Number(17463349)
+            n_rj.innerHTML = `${txtrj.toLocaleString('pt-br')}`
+        
+        let txtba = window.document.getElementById('n_ba')
+            txtba = Number(14985284)
+            n_ba.innerHTML = `${txtba.toLocaleString('pt-br')}`
+
+        let txtresp = window.document.getElementById('resp')
+
+    let soma = txtsp + txtmg + txtrj + txtba
+        
+        txtresp.innerHTML = `${soma.toLocaleString('pt-br')}`
+
+    </script>
+</body>
+</htmld
