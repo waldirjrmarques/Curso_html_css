@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+   
+        }
+        table{
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 7px;
+            text-align: center;
+        }
+        .cor{
+           background-color: rgb(148, 151, 148);
+           color: white; 
+        }
+        #ajusteletra1{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+               <th rowspan="2" scope="col" class="cor">Área</th> 
+               <th rowspan="2" scope="col" class="cor">Disciplina</th>
+               <th colspan="2" scope="colgroup" class="cor">Notas</th>
+               <th rowspan="2" scope="col" class="cor">Média</th>
+            </tr>
+            <tr>
+                <th scope="col" class="cor">Nota 1</th>
+                <th scope="col" class="cor">Nota 2</th>
+             </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td id="ajusteletra1">Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td id="ajusteletra1">Fisica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td id="ajusteletra1">Quimica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td id="ajusteletra1">Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th  colspan="4" scope="row" class="cor" id="ajusteletra1">Média de Exatas</th>
+                <td class="cor">0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td id="ajusteletra1">História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td id="ajusteletra1">Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th  colspan="4" scope="row" class="cor" id="ajusteletra1">Média de Humanas</th>
+                <td class="cor">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

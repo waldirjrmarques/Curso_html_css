@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="enpt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+   
+        }
+        table{
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 7px;
+            text-align: center;
+        }
+        /* Mudando as cores das  culunas da tabelas com <colgroup> */
+        .nome{
+            background-color: yellow;
+        } 
+        .sexo{
+            background-color: violet;
+        }
+        .idade{
+            background-color: tomato;
+        }
+        .prof{
+            background-color: blue;
+        }   
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="nome"> <!--primira coluna da tabela-->
+            <col class="sexo">  <!--segunda coluna da tabela-->
+            <col class="idade"> <!--terceira coluna da tabela-->
+            <col class="prof" span="2">  <!--quarta coluna da tabela -->
+             <!--span="2" faz as proximas colunas herdarem a conf de css -->
+            
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th>Nome</th> <!--primira coluna da tabela-->
+                <th>Sexo</th> <!--segunda coluna da tabela-->
+                <th>Idade</th> <!--terceira coluna da tabela-->
+                <th>Profissão</th> <!--quarta coluna da tabela -->
+                <th>Teste</th> <!--quinta coluna da tabela -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Waldir Junior</td>
+                <td>M</td>
+                <td>31</td>
+                <td>Programador</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Nayana Marques</td>
+                <td>F</td>
+                <td>31</td>
+                <td>Administradora</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ícaro marques</td>
+                <td>M</td>
+                <td>3</td>
+                <td>Autonomo</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Julia marques</td>
+                <td>F</td>
+                <td>0</td>
+                <td>Contadora</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Maria eduarda</td>
+                <td>F</td>
+                <td>12</td>
+                <td>Estudante</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Flavia Souza</td>
+                <td>F</td>
+                <td>35</td>
+                <td>Advogada</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

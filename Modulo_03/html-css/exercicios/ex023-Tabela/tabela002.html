@@ -12,13 +12,22 @@
         table{
             width: 500px;
             /*height: 100px;*/
-            border-collapse: collapse;
+            border-collapse: collapse; /*junta as linhas da tabela*/
+            position: relative;/* comando para poder fixa o cabeçalho*/
         }
+    
         caption{
+            border: 1px solid black;
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
             background-color: lightgred;
+            background-color: rgb(105, 120, 255);
+            color: white;
+        }
+        thead > tr > th{/* comandos para poder fixa o cabeçalho*/
+            position:sticky;
+            top: 0; 
         }
         tbody > tr:nth-child(even){/*efeito zebrado na tabela (configurar o salto em ex (2n) ou (odd =  inpar)ou (even =  par)) */
             background-color:lightgray;
@@ -48,6 +57,7 @@
             color: rgb(233, 233, 236);
             font-weight: bolder;
         }
+        
 
     </style>
 </head>
@@ -100,6 +110,79 @@
                     <td>Bahia</td>
                     <td class="num" id="n_ba"></td>
                 </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num" id="n_ba"></td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num" id="n_ba"></td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num" id="n_ba"></td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num" id="n_ba"></td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num" id="n_ba"></td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num" id="n_ba"></td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num" id="n_ba"></td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num" id="n_ba"></td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num" id="n_ba"></td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num" id="n_ba"></td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num" id="n_ba"></td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num" id="n_ba"></td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num" id="n_ba"></td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num" id="n_ba"></td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num" id="n_ba"></td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num" id="n_ba"></td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num" id="n_ba"></td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num" id="n_ba"></td>
+                </tr>
+                
             </tbody>
         <tfoot>
             <tr>
@@ -108,7 +191,7 @@
             </tr>
         </tfoot>
     </table>  
-
+    
     <script>
         let txtsp = window.document.getElementById('n_sp')
             txtsp = Number(46649132)
