@@ -1,0 +1,7 @@
+* Envelopar
+	1° - Selecionar o locar do texto onde quer emvelocar 
+	2° - Fazer o atalho ctrl + shift + p
+        3° - Selecionar o emmet:envolver com abreviação e precione enter
+        4° - Digirar a teg desejada e precionar enter
+	
+	
