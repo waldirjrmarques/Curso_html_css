@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmina, áudio e  Video</title>
+</head>
+<body>
+    <h1>Capítulo 11 -  Video</h1>
+    <hr>
+    
+
+    <h1>Video </h1>
+    <h2>Video (hosdedagem local)</h2>  
+    <video width="400" poster="video/3.png" controls  autoplay>
+        <source src="video/WA0013.mp4" type="video/mp4">
+        <source  src="video/WA0013.webm" type="video/webm">
+        <source src="video/WA0013.ogv" type="video/ogg">
+        <!--Imagem caso o video nao caregue-->
+        <p>Infelizmente seu navegador  nao conseguiu carrgar o vídeo.</p>
+    </video>
+    <!--
+        observações:
+            atributos importantes tag <video>:
+
+                width"400px" -> vai indicar a largura que o vídeo vai ter na tela. Nesse exemplo, 400px.
+
+               poster="video/3.png" -> configura uma imagem que vai aparecer como uma capa, enquanto o visitante não aperta o play para reproduzir o vídeo
+
+               controls -> vai configurar se os controles do vídeo vão aparecer na parte inferior da mídia. Por padrão, os controles não aparecerão, mas basta colocar a palavra controls na tag <video>.
+
+               autoplay -> diz para o navegador se o vídeo vai começar a tocar automaticamente,assim que a página for carregada. 
+    -->
+
+
+    <h1>Video (hosdedagem em servidores de video YOUTUBE e VIMEO)</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ejkb_YpuHWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

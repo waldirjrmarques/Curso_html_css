@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmina, áudio e  Video</title>
+</head>
+<body>
+    <h1>Capítulo 11 - Imagens Dinâmina e áudio </h1>
+    <hr>
+    
+    <h1>Imagens Dinâmina </h1>
+
+    <h2>Imagens Flexíveis</h2>
+    <picture>
+        <!--Imagem G / ultima imagem a ser colocada -->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <!--Imagem M / segunda imagem a ser colocada -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> 
+         <!--Imagem G padrao / primeira imagem a ser colocada -->
+        <img src="imagens/foto-g.png" alt="A imagem flexível funciona">  
+    </picture>
+    
+    <h1>Áudio</h1>
+    <h2>Vamos falar sobre Áudio</h2>
+
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg"> <!--padrao-->
+        <source src="midia/guanacast-33.ogg" type="audio/ogg"> <!---->
+        <source src="midia/guanacast-33.wav" type="imag/wav"> <!---->
+    </audio>
+
+    <!--
+        observações:
+
+        Vamos analisar os principais atributos da tag <audio> antes de mais nada:
+            preload - indica se o áudio será pré-carregado ou não e aceita três valores:
+
+                preload="metadata" -> vai carregar apenas as informações sobre o arquivo (tamanho,tempo, informações de direitos, etc)
+
+                preload="none" -> não vai carregar absolutamente nada até que o usuário clique no botão play ou um script inicie a reprodução
+
+                preload="auto" -> (padrão) vai carregar o arquivo de áudio inteiro assim que a página for carregada, mesmo que o usuário nunca aperte o play
+            
+            controls - vai apresentar o player na tela. Caso não seja colocado na tag<audio>, o controle será transparente e o usuário não poderá interagir com ele.
+            
+            autoplay - quando inserido, vai iniciar a reprodução do áudio assim que
+            a página for carregada. 
+            
+            loop - vai fazer com que o áudio seja repetido eternamente assim que
+            terminar a sua reprodução.
+        
+    -->
+    <!--Colocando o AUDIO para fazer download-->
+    <p>Seu navegador não suporta áudio <a href="midia/guanacast-33.mp3" download="guanacast-33" type="audio/mpeg" >Clique aqui baixar</a></p>
+
+
+
+</body>
+</html>

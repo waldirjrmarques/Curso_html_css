@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Capítulo 10 - Ligaçoes em todas as partes - Links e Âncoras em HTML5 - </h1>
+    <hr>
+
+
+    <!--Usando links Externos-->
+    <h1>Usando links Externos</h1>
+    <p>Você pode acessar o meu Gighub Público <a href="https://github.com/gustavoguanabara/gustavoguanabara.github.io" target="_blank" rel="external">Click  Aqui</a>
+    <!--com os parametros  target="_blank" e rel="external" Link abre uma nova aba -->
+
+    <p>Você também pode acessar meu Site do curso em video. <a href="https://www.cursoemvideo.com/">Click  Aqui</a>  <!--Link SEM os parametros, link abre na mesma aba (Não recomendado para abrir site externo)--> 
+
+
+
+    <!--Usando Links Internos  -->   
+    <h1>Usando Links Internos </h1> 
+    <p>Esta é a primeira página do site, Você Tambem pode acessar a <strong>Segunda Página</strong><a href="pag02.html" rel="next" target="_self"> Clique aqui</a></p>
+
+    <p>Você tambem pode acessar nossa <strong>Terceira Página</strong> <a href="noticias/pag003.html" rel="next" target="_self"> Click aqui </a></p>
+
+    
+    <!--Links para Download-->
+    <h1>Links para Download</h1>
+    <ul>
+     
+        <li><a href="livro/Ligações em toda parte.pdf" download="Ligações em toda parte.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/Ligações em toda parte.rar" download="Ligações em toda parte.rar" type="application/zip">Baixar o livro em .RAR</a></li>
+
+     
+        <p>Consulta de Referencia de midia type </p>
+        <li><a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank">Referencia de midia type</a></li>
+        
+    </ul>
+
+    <!--
+       Observações:
+        
+        Para poder controlar onde o site de destino vai abrir, podemos usar o atributo target,
+        que suporta os seguintes valores:
+
+            target="_blank"  -> vai abrir o link em uma nova janela em branco
+            target="_self"   -> vai abrir o link na janela ou frame atual (padrão)  
+            target="_top"    -> vai desfazer todos os frames e abrir o destino no navegador completo
+            target="_parent" -> similar ao uso do _top em uma referência à janela mãe
+
+        Existe um recurso bem interessante para links que é indicar qual é a
+        natureza do destino usando o atributo rel. 
+
+            rel="next"     -> indica que o link é para a próxima parte do documento atual
+            rel="prev"     -> indica que o link é para a parte anterior do documento atual
+            rel="author"   -> indica que é um link para o site do autor do artigo atual
+            rel="external" -> indica que é um link para outro site que não faz parte do site atual
+            rel="nofollow" -> indica que é um link para um site não endossado, como um link pago  
+
+        Links para fazer download
+        Aqui vão alguns media types bem usados no nosso dia-a-dia:
+            ex:<a href="Caminho do arquivo.rar" 
+                download="nome do arquivo.rar"
+                type="application/zip">Nome do link</a>
+
+                ‣ application/zip
+                ‣ text/html
+                ‣ text/css
+                ‣ text/javascript
+                ‣ video/mp4
+                ‣ video/H264
+                ‣ video/JPEG
+                ‣ audio/aac
+                ‣ audio/mpeg
+                ‣ font/ttf
+                ‣ image/jpeg
+                ‣ image/png
+                    
+    -->
+</body>
+</html>
