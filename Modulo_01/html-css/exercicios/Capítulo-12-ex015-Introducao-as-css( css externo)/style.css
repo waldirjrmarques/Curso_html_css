@@ -1,7 +1,7 @@
-@charset "UTF-8";
-/* CSS EXTERNAL */
 /* Regra @charset "UTF-8" caso haja problema com acentuação */
+@charset "UTF-8";
 
+/* CSS EXTERNAL */
 body {
     background-color: rgb(202, 226, 233);
     font-family: Arial, Helvetica, sans-serif;
