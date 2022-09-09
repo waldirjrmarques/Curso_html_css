@@ -16,14 +16,34 @@ body {
     background-image: linear-gradient(to top,white,blue);
     /*Degrande de cima para baixo*/
     background-image: linear-gradient(to botton,white,blue);
+
     /*Tipo de fonte da letra*/
     font-family: Arial, Helvetica, sans-serif;
     /*Tamanho da letra*/
     font-size: 20px;
+    /*Aplica itálico*/
+    font-style: italic;
+    /* Aplica Negrito*/  
+    font-weight: normal;  
+    font-weight: lighter;
+    font-weight: bold;
+    font-weight: bolder;
+
     /*Cor*/
     color: rgb(39, 15, 145);
+
     /*Alinhamento do texto*/
     text-align: justify;
+    /*Alinhamento do texto ESQUERDA*/
+    text-align: left; 
+     /*Alinhamento do texto DIREITA*/
+    text-align: right; 
+    /*Alinhamento do texto CENTRO*/
+    text-align: center; 
+    /* Aplica Sublinhado*/
+    text-decoration: underline;
+    /*Afasta para a direita o inicio do paragrafo*/ 
+    text-indent: 30px; 
     /*Largura*/
     width: 10px;
     /*Acochoamento*/
