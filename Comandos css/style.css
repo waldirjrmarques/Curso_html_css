@@ -1,10 +1,21 @@
-@charset "UTF-8";
-/* CSS EXTERNAL */
 /* Regra @charset "UTF-8" caso haja problema com acentuação */
+@charset "UTF-8";
+
+*{ /*Configuração Globais das CSS */
+    
+    }
 
 body {
     /*Cor de fundo*/
     background-color: rgb(202, 226, 233);
+    /*Degrande da esquerda para direita*/
+    background-image: linear-gradient(to rigth, white,blue);
+     /*Degrande da direta para esquerda*/
+    background-image: linear-gradient(to left, white,blue);
+     /*Degrande da baixo para cima*/
+    background-image: linear-gradient(to top,white,blue);
+    /*Degrande de cima para baixo*/
+    background-image: linear-gradient(to botton,white,blue);
     /*Tipo de fonte da letra*/
     font-family: Arial, Helvetica, sans-serif;
     /*Tamanho da letra*/
@@ -13,6 +24,17 @@ body {
     color: rgb(39, 15, 145);
     /*Alinhamento do texto*/
     text-align: justify;
+    /*Largura*/
+    width: 10px;
+    /*Acochoamento*/
+    padding: 10px;
+    /*centralizar tags*/
+    margin: auto;
+    /*arredondar cantos*/
+    border-radius: 10px ;
+    /*Sombreamento*/
+    box-shadow: 5px 5px 5px black;
+    
  
 }
 
