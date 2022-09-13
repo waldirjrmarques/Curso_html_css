@@ -6,4 +6,5 @@
 
 * Procurar caminho de arquivo
         ctrl + espaço 
-	
+
+* Segurar alt e clicar ou escrever para auteração dos codigos.	

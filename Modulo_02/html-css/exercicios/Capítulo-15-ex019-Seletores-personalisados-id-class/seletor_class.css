@@ -4,7 +4,7 @@
     em HTML é (class) = em CSS é (.)
 
     obs: Não se usa Id para configurar dos elemrntos (teg), Se usa a class.
-    obs: o nome das classe devem ser dada pela sua funçao.
+    obs: o nome das classe devem ser dada pela sua funcionalidade.
     obs: nao colocar acentuação nos nomes das class e id
     obs: pode se usar mais de uma class em um elemento (teg)
     obs: pode usar um id e uma classe no memso elemento (teg)
@@ -30,6 +30,11 @@ h1 {
 .basico {
 
     color: rgb(36, 253, 7);
+}
+
+.destaque{
+    background-color: rgb(111, 206, 111);
+    font-weight: bolder;
 }
 
 .intermediario {

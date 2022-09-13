@@ -46,6 +46,8 @@ body {
     text-indent: 30px; 
     /*Largura*/
     width: 10px;
+    /* altura */
+    height: 300px; 
     /*Acochoamento*/
     padding: 10px;
     /*centralizar tags*/
@@ -54,8 +56,18 @@ body {
     border-radius: 10px ;
     /*Sombreamento*/
     box-shadow: 5px 5px 5px black;
+    /* alinhar*/
+    display:inline-block; 
     
  
+}
+/*Como declarar classe*/
+.class{
+
+}
+/*Como declarar id*/
+#id{
+
 }
 
 
