@@ -4,7 +4,12 @@
 *{ /*Configuração Globais das CSS */
     
     }
-
+    /*PESQUISAR SOBRE
+        height: 100vh;
+        height: 100vmax;
+        height: 100vmin;
+        height: 100vw;
+    */
 body {
     /*Cor de fundo*/
     background-color: rgb(202, 226, 233);
@@ -16,6 +21,42 @@ body {
     background-image: linear-gradient(to top,white,blue);
     /*Degrande de cima para baixo*/
     background-image: linear-gradient(to botton,white,blue);
+    
+    /*Imagem de fundo*/
+    background-image: url("");
+      
+    
+        background-repeat: repeat; /*repete a imagem ate caber na caixa*/
+        background-repeat: no-repeat;/*nao repete a imagem na caixa*/
+        background-repeat: repeat-x;/*pisiçao horizontal da imagem*/
+        background-repeat: repeat-y;/*pisiçao vertical da imagem*/
+        
+        /*ajusta o tamanho da imagem*/
+        background-size: 0px;/*ajusta o tamanho da imagem por px*/
+        background-size: 0%;/*ajusta o tamanho da imagem por %*/
+        background-size: cover;/*ajusta o tamanho da imagem ate caber na tela*/
+        background-size:auto;/*ajusta o tamanho da imagem original*/
+        background-size:cover;/*ajusta o tamanho da imagem pra caber na largura da tela */
+        background-size:contain;/*ajusta o tamanho da imagem pra caber na altura da tela*/
+
+        /*ajusta a posição da imagem*/
+        background-position: left top;
+        background-position: left center; 
+        background-position: left bottom;
+        background-position: center top;
+        background-position: center center;
+        background-position: center bottom;
+        background-position: right top;
+        background-position: right center;
+        background-position: right bottom;
+
+        
+        background-attachment:fixed;/*imagem fixa*/
+        background-attachment: scroll;/*imagem rola junto con o conteúdo*/
+
+      
+    
+        
 
     /*Tipo de fonte da letra*/
     font-family: Arial, Helvetica, sans-serif;
@@ -42,22 +83,36 @@ body {
     text-align: center; 
     /* Aplica Sublinhado*/
     text-decoration: underline;
+    /* Remove Sublinhado*/
+    text-decoration: none;
     /*Afasta para a direita o inicio do paragrafo*/ 
     text-indent: 30px; 
+    /*afastar a linha*/
+    line-height: 1.7em;
     /*Largura*/
     width: 10px;
     /* altura */
     height: 300px; 
+    /*(RESPANSIVIDADE) menor largura da tela */
+    min-width: 400px;
+    /*(RESPANSIVIDADE) maior largura da tela*/
+    max-width: 800px;
     /*Acochoamento*/
     padding: 10px;
     /*centralizar tags*/
     margin: auto;
     /*arredondar cantos*/
-    border-radius: 10px ;
-    /*Sombreamento*/
+    border-radius: 10px 10px 10px 10px;
+    /*Sombreamento caixa*/
     box-shadow: 5px 5px 5px black;
+    /*Sombreamento texto/letra*/
+    text-shadow: 5px 5px 5px black;
+
     /* alinhar*/
     display:inline-block; 
+
+    /* Colocar Conteudo*/
+    content: 'Conteudo';
     
  
 }
@@ -69,6 +124,55 @@ body {
 #id{
 
 }
+
+
+/*
+pseudoclass
+    :houver (quando passar o mouse por cima
+    :active (quando clicar)
+    :visited (quando for visitado)
+*/
+
+/*
+pseudoelement
+    ::after (depois)
+    ::before (antes)
+*/
+
+/*
+    Modelo de caixa:
+    box-level =  display: block;
+    inline-leval  = display: inline;
+
+    para mudar de inline-level para box-level coloca-se
+            display;block;
+    para mudar de box-level para inline-level coloca-se
+            display;inline;
+*/
+
+
+/*
+    Caixa
+        quebra pra linha de baixo (padrao)
+        flex-wrap: wrap; 
+*/
+
+/*Cores e fontes roots com css*/
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+    --font0: Arial, Verdana, Helvetica, sans-serif ;
+    --font1: 'BebasNeue';
+    --font2:'idroid', sans-serif;
+}
+
+
+
+
 
 
  
