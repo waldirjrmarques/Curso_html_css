@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            position: relative;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            background-color: blueviolet;
+            height: 600px;
+           
+        }
+        #conteudo{
+            
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            background-color: yellow;
+            height: 290px;
+            width: 49%;
+
+            /*ajustando a caixa article*/
+            position: absolute;
+                /* Ajusta a referencia da caixa article*/
+                left: 50%; 
+                top: 50%;
+
+                /* Ajusta a caixa article*/
+                transform: translate(-50% ,-50%); 
+                    /*
+                    transform: translate(-60%,-50%);
+                    1° valor com o sinal (-) vai esquerda e (+) vai para a direita
+                    2° valor com o sinal (-) vai para cima (+) vai para baixo
+                    */
+        }   
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>

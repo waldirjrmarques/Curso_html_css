@@ -1,14 +1,20 @@
 /* Regra @charset "UTF-8" caso haja problema com acentuação */
 @charset "UTF-8";
 
+/*PESQUISAR */
+.{
+    position: ;
+}
+
 *{ /*Configuração Globais das CSS */
     
     }
-    /*PESQUISAR SOBRE
-        height: 100vh;
-        height: 100vmax;
-        height: 100vmin;
-        height: 100vw;
+    /*viewport
+            width:  100vw;          vw % da largura da viewport
+            height: 100vh;          vh % da altura da viewport  
+                height: 100vmax;    vmax 1% da MAIOR medida entre vw e vh
+                height: 100vmin;    vmin 1% da MENOR medida entre vw e vh
+
     */
 body {
     /*Cor de fundo*/
@@ -34,13 +40,15 @@ body {
         /*ajusta o tamanho da imagem*/
         background-size: 0px;/*ajusta o tamanho da imagem por px*/
         background-size: 0%;/*ajusta o tamanho da imagem por %*/
-        background-size: cover;/*ajusta o tamanho da imagem ate caber na tela*/
         background-size:auto;/*ajusta o tamanho da imagem original*/
         background-size:cover;/*ajusta o tamanho da imagem pra caber na largura da tela */
         background-size:contain;/*ajusta o tamanho da imagem pra caber na altura da tela*/
+        background-size: 100vh;
+        background-size: 100vw;
+ }
 
         /*ajusta a posição da imagem*/
-        background-position: left top;
+       
         background-position: left center; 
         background-position: left bottom;
         background-position: center top;
@@ -60,31 +68,51 @@ body {
 
     /*Tipo de fonte da letra*/
     font-family: Arial, Helvetica, sans-serif;
-    /*Tamanho da letra*/
+    /*Tamanho da fonte  [px, em, rem, %]*/
     font-size: 20px;
     /*Aplica itálico*/
     font-style: italic;
-    /* Aplica Negrito*/  
+    /* Aplica "Negrito"*/  
     font-weight: normal;  
     font-weight: lighter;
     font-weight: bold;
     font-weight: bolder;
+    /*tudo em  maiusculo com letra inical maiores*/
+    font-variant: small-caps;
+    /*Esta propriedade serve para esticar e encolher texto*/
+        font-stretch: condensed;
+        font-stretch: normal;
+        font-stretch: expanded;
 
     /*Cor*/
     color: rgb(39, 15, 145);
 
-    /*Alinhamento do texto*/
+    /*Alinhamento do texto horizontal ===>>*/
     text-align: justify;
     /*Alinhamento do texto ESQUERDA*/
     text-align: left; 
      /*Alinhamento do texto DIREITA*/
     text-align: right; 
     /*Alinhamento do texto CENTRO*/
-    text-align: center; 
+    text-align: center;
+    
+    /*alinhamento vertical / top,middle,bottom*/
+    vertical-align:top;/* cima*/
+    vertical-align:middle;/* Meio*/
+    vertical-align:middle;/* baixo*/
+
     /* Aplica Sublinhado*/
     text-decoration: underline;
     /* Remove Sublinhado*/
     text-decoration: none;
+
+    /* tudo em letra maiuscula*/
+    text-transform: uppercase;
+    /* tudo em letra minusculas*/
+    text-transform: lowercase;
+    /* tudo em letras iniciais de palavra em  maiuscula*/
+    text-transform: capitalize;
+    
     /*Afasta para a direita o inicio do paragrafo*/ 
     text-indent: 30px; 
     /*afastar a linha*/
@@ -93,23 +121,38 @@ body {
     width: 10px;
     /* altura */
     height: 300px; 
+
     /*(RESPANSIVIDADE) menor largura da tela */
     min-width: 400px;
     /*(RESPANSIVIDADE) maior largura da tela*/
     max-width: 800px;
+    
     /*Acochoamento*/
     padding: 10px;
     /*centralizar tags*/
     margin: auto;
+
+    border-style: solid;
+    border-style: dashed;
+    border-style: dotted;
+    border-style: double;
+    border-style: none;
+    
     /*arredondar cantos*/
     border-radius: 10px 10px 10px 10px;
     /*Sombreamento caixa*/
     box-shadow: 5px 5px 5px black;
     /*Sombreamento texto/letra*/
     text-shadow: 5px 5px 5px black;
-
-    /* alinhar*/
+    
+    /*Colocar um teg com as caracteristicas de block- level e inline-level*/
+    /* caracteristicas inline: ajustar altura e largura*/
+    /* caracteristicas blok: ocupar a linha */
     display:inline-block; 
+    /* deixar um tag inline-level como block-level*/
+    display:block; 
+    /* deixar um tag blok-level como inline-level*/
+    display:inline;
 
     /* Colocar Conteudo*/
     content: 'Conteudo';
@@ -172,7 +215,84 @@ pseudoelement
 
 
 
+/*Tabelas
+    
+    Hierarquia de tabela (simples)
+    table = tabela
+        table row (tr) =  linha da tabela
+            table header(th) =  cabeçalho de tabela
+            table data (td) =  dado de tabela                   
 
+
+    Anatomia para tabelas grandes
+    table
+        caption             (título) 
+        header              (cabeçalho)
+            tr, td, th
+        tbody               (corpo)
+            tr, td, th
+        tfoot               (rodapé)
+            tr, td, th    
+                    
+
+    <th scope="col"> se usa quando os dados entao na mesma coluna da tabela 
+    <th scope="row"> se usa quando os dados estoa na mesma linha da tabela     
+    <th colspan="2">mescla celula nas 2 coluna-->
+    <th rowspan="2">mescla celula nas 2 linha-->
+*/
+    *{  
+        /*junta as linhas da tabela*/
+        border-collapse: collapse; 
+        /* PADÃO separa linhas da tabela*/
+        border-collapse: separate; 
+        
+        /* comandos para poder fixa o cabeçalho*/
+        position:sticky;
+
+    }
+    tbody > tr:nth-child(even){/*efeito zebrado na tabela (configurar o salto em ex (2n) ou (odd =  inpar)ou (even =  par)) */
+        background-color:lightgray;
+    }
+    tbody > tr:nth-child(odd){/*efeito zebrado na tabela (configurar o salto em ex (2n) ou (odd =  inpar)ou (even =  par)) */
+        background-color:rgba(93, 135, 226, 0.397);
+
+
+  /* Mudando as cores das  culunas da tabelas com <colgroup> 
+    <colgroup>
+        <col class="nome"> <!--primira coluna da tabela-->
+        <col class="sexo">  <!--segunda coluna da tabela-->
+        <col class="idade"> <!--terceira coluna da tabela-->
+        <col class="prof" span="2">  <!--quarta coluna da tabela -->
+        <!--span="2" faz as proximas colunas herdarem a conf de css -->
+    </colgroup>
+
+    */
+    .nome{
+        background-color: yellow;
+    } 
+    .sexo{
+        background-color: violet;
+    }
+    .idade{
+        background-color: tomato;
+    }
+    .prof{
+        background-color: blue;
+    }   
+
+
+    #conteiner{/*configuração para fixar o conteudo com tabela em tela prquena*/
+        overflow-x:auto;
+        overflow-y: auto;
+     /*
+     <div id="conteiner"><!--configuração para fizar o conteudo com tabela em tela prquena-->
+        <table>
+     */   
+    }
+
+    
+
+    
 
 
  

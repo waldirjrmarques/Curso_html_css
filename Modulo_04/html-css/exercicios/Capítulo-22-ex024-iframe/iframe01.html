@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de Iframe</title>
+    <!-- css tem priorideade nas config. dos ifreme
+        <style>
+        iframe {
+            width: 600px;
+            height: 150px;
+        }
+    </style>
+    -->
+    <style>
+        #guanabara{
+            width: 500px;
+            height: 150px;
+            border: 10px solid black;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Anotações
+        * O ifreme  é inline-level
+            <iframe >
+                name="qualquernome" =  serve pra linkar ao target da teg a
+                src="" =  endereço do site (externo ou local)
+                frameborder="0"  = iframe com borda
+                frameborder="1"  = iframe sem borda
+                height="400"     = altura do iframe
+                width="600"      = Largura do iframe 
+                scolling="auto"  = Se exceder p tamanho do iframa criar barra de rolagem (padrao)
+                scolling="yes"   =  Mesmo que o conteudo caiba no tamanho do iframa cria barra de rolagem
+                scolling="no"    = Nao cria barra de rolagem indepentende do tamanho do site
+                sandbox="sandbox" =  bloquea capatura de informação
+                ("sandbox" tem outras funções)
+                referrerpolicy="no-referrer" = nao coleta informação do usuario
+             
+            </iframe>    
+
+    -->
+    
+     <h1>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" target="_blank">Documentação Iframe</a>
+    </h1>
+    <h2>Testando o uso de Ifreme </h2>
+
+    <!--EXEMPLO 01-->
+    <p>
+        Acessando o site do 
+        <iframe  src="https://www.cursoemvideo.com/" frameborder="0" height="400" width="600" scolling="auto">
+            <!--Caso no vavegador do celular nao ser compativel aparece esse link-->
+            <a href="https://www.cursoemvideo.com/" target="_blank">cursoemvideo</a>
+        </iframe>
+        para aprender a programar
+    </p>
+
+    
+    <!--EXEMPLO 02-->
+    <p>
+        O repositorio do 
+        <iframe id="guanabara" src="https://github.com/gustavoguanabara/gustavoguanabara.github.io" frameborder="0">
+             <!--Caso no vavegador do celular nao ser compativel aparece esse link-->
+            <a href="https://github.com/gustavoguanabara/gustavoguanabara.github.io" target="_blank">Guanabara</a>
+        </iframe>
+        tambem é muito legal pena que não funciona com iframe.
+    </p>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+       body{
+            
+       }
+        .container{
+            margin-top: 20vh;
+            height: 400px;
+            width: 400px;
+            background-color: blue;
+            position: relative;
+                top:100px;
+                right: ;
+                bottom:;
+                left:30vh ; 
+         
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            position: absolute;
+                top:50%;
+                right: ;
+                bottom:;
+                left:50%; 
+                transform: translate(-50% ,-50%); 
+                    /*
+                    transform: translate(-60%,-50%);
+                    1° valor com o sinal (-) vai esquerda e (+) vai para a direita
+                    2° valor com o sinal (-) vai para cima (+) vai para baixo
+                    */
+        }
+        .teste{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(240, 236, 0);
+       
+        }
+    </style>
+</head>
+<!--teg pai div container-->
+<body>
+    <!--
+        position: ;
+            Utilizando o position absolute o elemento de ajuste Top, Bottom, Left e Right cria ferencia ao elemento relative. Com elas você pode alterar o posicionamento do elemento com referencoa ao elemento pai no caso ateg <div class="container">.
+            
+            Se estiver refenecia de teg  relative ela herda referencia em relação a configuração padrao body que tem a prpriedade position static.
+            
+            colocar a proriedade absolute na teg pai todos os filhos herdam a configuração 
+    -->
+
+    <!--teg pai div box-->
+    <div class="container">
+    
+        <!--teg pai div teste-->
+        <div class="box">
+            <div class="teste">
+                
+            </div>
+        </div>
+    
+    </div>
+   
+     
+</body>
+</html>

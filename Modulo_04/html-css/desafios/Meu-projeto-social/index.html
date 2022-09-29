@@ -4,16 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-index.css">
     <title>Projeto-social</title>
+    <style>
+        @charset "UTF-8";
+
+*{
+margin: 0;
+padding: 0px;
+font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    
+}
+body{
+ 
+    background-image: url(pacote-d013/imagens/fundo-madeira.jpg);
+       background-repeat: no-repeat; 
+       
+}
+#redes-sociais{  
+    position:relative;
+    margin-top: 10px;
+    text-align: right;
+}
+
+#redes-sociais>a>img{
+    border-radius: 50%;
+    width:5vw;  
+    box-sizing: border-box; 
+    margin-bottom: 15px; 
+    margin-left:92vw;
+   
+}
+section#redes-sociais img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.63);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.575);
+    transition: transform .3s ,border .1s;
+}
+
+#telefone{
+    background-image: url(pacote-d013/imagens/frame-iphone.png);
+    background-repeat: no-repeat;
+    height: 625px;
+    width: 310px;
+    position: absolute;
+        top:50%;
+        right: ;
+        bottom:;
+        left:50%; 
+        transform: translate(-50% ,-49%); 
+            /*
+            transform: translate(-60%,-50%);
+            1° valor com o sinal (-) vai esquerda e (+) vai para a direita
+            2° valor com o sinal (-) vai para cima (+) vai para baixo
+            */
+        }
+    iframe{
+        position: absolute;
+            top:50%;
+            right:;
+            bottom:;
+            left:50%; 
+            transform: translate(-50% ,-49%); 
+            /*
+            transform: translate(-60%,-50%);
+            1° valor com o sinal (-) vai esquerda e (+) vai para a direita
+            2° valor com o sinal (-) vai para cima (+) vai para baixo
+            */
+    }
+
+
+    </style>
 </head>
 <body>
     <main>
-        <section id="telefone">
-
-        </section>
         <section id="redes-sociais">
+            <a href="paginas-telas/home.html" target="iframe"><img src="pacote-d013/imagens/logo-home.jpg" alt=""></a>
 
+            <a href="paginas-telas/youtube.html" target="iframe"><img src="pacote-d013/imagens/logo-youtube.jpg" alt=""></a>
+
+            <a href="paginas-telas/github.html" target="iframe"><img src="pacote-d013/imagens/logo-github.jpg" alt=""></a>
+
+            <a href="paginas-telas/instagran.html" target="iframe"><img src="pacote-d013/imagens/logo-instagram.jpg" alt=""></a>
+
+            <a href="paginas-telas/twitter.html" target="iframe"><img src="pacote-d013/imagens/logo-twitter.jpg" alt=""></a> 
+
+            <a href="paginas-telas/facebook.html" target="iframe"><img src="pacote-d013/imagens/logo-facebook.jpg" alt=""></a> 
+
+           
+        </section>
+
+        <section id="telefone">
+           <iframe name="iframe" src="paginas-telas/home.html" height="469px" width="265px" 
+           frameborder="0"></iframe>
         </section>
     </main>
 </body>
