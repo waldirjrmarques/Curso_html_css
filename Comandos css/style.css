@@ -290,7 +290,19 @@ pseudoelement
      */   
     }
 
-    
+    .{
+        /*Animação*/
+
+        /*deslocamento */
+        transform: translate(-3px, -3px);
+        /*tempo de deslocamento*/
+        transition: transform .3s ,border .1s;
+    }
+    /*Esconder barras de rolagem*/
+    ::-webkit-scrollbar{
+        width: 0px;
+        height: 0px;
+    }
 
     
 
