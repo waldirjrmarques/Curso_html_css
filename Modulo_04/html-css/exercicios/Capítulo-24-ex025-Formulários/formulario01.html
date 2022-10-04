@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p><label for="inome">Nome</label>:<input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome</label>:<input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+        
+    </form>
+
+    <!--Observaçoes
+        form
+            Todo formolário tem que tá dentro ta teg form
+                action=""
+                    Locar especifico da linguagem php
+
+                Metodo de enviar formulário:
+                    1° - method="get"
+                        Esse método se usa quando os dados não são confidenciais e que queira que a url seja compratilhada. Só pode usar até 3 mil bits nesse método.
+                        Não se deve usar para dados sensiveis,arquivos  ou compactados
+
+                    2° - method="post"
+                        Esse métodos se usa para ter uma meçhor segurança de dados privados.
+                        Se o formulário passar de 3 mil bits pode usar esse método.
+                        Pode ser usado pra enviar arquivos.   
+
+                autocomplete="on" 
+                    = (padrao) deixa ligado sugestao de informaçao para completar o formulário
+
+                autocomplete="off" 
+                    = remove a suhjetsao de completar o formulário
+                
+                label 
+                    = serve para relacionar  o nome do campo ao imput atraves do for do label e o id do input
+                imput
+                    Topo de formulário. Existe diverçoes tipos de imput   
+                        type="text" 
+                            ex:tipo texto
+
+                        name="" 
+                        
+                        id=""
+                            relacionar ao label e ao DOM (J.S)
+
+                       required
+                            Informa que o campo é obrigatório  
+
+                       minlength="5" 
+                            Quantidade minima de caracteres (ex:5)
+                       
+                        maxlength="5" 
+                            Quantidade maxima de caracteres (ex:5)
+                        
+                        size="10"   
+                            tamanho da caixa do formulário
+
+                        placeholder="informe a senha"
+                            Mostra informação dentro da caixa do formulário  
+                        
+                        autocomplete="current-password"   
+                            Existe varios tipos de autocompletes foi feito exemplo com autocomplete="current-password" 
+                            para hbalitar essa funçao dentro do input  autocomplete da teg forme deve ta On
+
+                        min="0"
+                            Espeficicar o numero minimo do imput nunber que é aceito 
+
+                        max="10"
+                            Espeficicar o numero maximo do imput nunber que é aceito 
+                        
+                        value="0"
+                            Coloca um valor inicial no imput 
+
+                        step="0.5"
+                            salto de (ex: 0.5) entre numeros min="0" e max="0"
+
+
+    -->
+</body>
+</html>
