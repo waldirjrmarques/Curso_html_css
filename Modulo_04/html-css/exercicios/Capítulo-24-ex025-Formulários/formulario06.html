@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <h1>Cor com formulário</h1>
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p> 
+
+        <h1>Formulario de rang</h1>
+        <p>
+            <label for="inivel">Nivel de satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="0" max="10" value="5"
+            oninput="saida.innerHTML = Number(inivel.value)"><!--java script-->
+            <output id="saida">5</output> <!-- Saida de dados do j.s-->
+        
+            
+        </p>
+
+        <h1>Arquivo</h1>
+        <p>
+            <label for="ifoto">Adicionar Foto</label>
+            <input type="file" name="foto" id="ifoto">
+
+            <!-- form tem que tá no método autocomplete="on" -->
+        </p>
+    </form>
+    
+</body>
+</html>

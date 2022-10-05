@@ -10,82 +10,174 @@
     </style>
 </head>
 <body>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="get" autocomplete="on" accept-charset="character_set">
         <p><label for="inome">Nome</label>:<input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome</label>:<input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
-        
+    
     </form>
 
     <!--Observaçoes
+        (ELEMENTO)
         form
             Todo formolário tem que tá dentro ta teg form
-                action=""
-                    Locar especifico da linguagem php
+            (ATRIBUTOS)
+            action=""
+                Ao enviar, envie os dados do formulário para um arquivo chamado "action_page.php" (para processar a entrada):
+                O actionatributo especifica para onde enviar os dados do formulário quando um formulário é enviado.
 
-                Metodo de enviar formulário:
-                    1° - method="get"
-                        Esse método se usa quando os dados não são confidenciais e que queira que a url seja compratilhada. Só pode usar até 3 mil bits nesse método.
-                        Não se deve usar para dados sensiveis,arquivos  ou compactados
+            target=""
+                (ação após enviar formulário)
+                _blank A resposta é exibida em uma nova janela ou guia
+                _self A resposta é exibida na janela atual
+                _parent A resposta é exibida no quadro pai
+                _top A resposta é exibida em todo o corpo da janela
+                framename A resposta é exibida em um iframe nomeado
+                (ação após enviar formulário)
+            
+            Metodo de enviar formulário:
+                1° - method="get"
+                    Esse método se usa quando os dados não são confidenciais e que queira que a url seja compratilhada. Só pode usar até 3 mil bits nesse método.
+                    Não se deve usar para dados sensiveis,arquivos  ou compactados
 
-                    2° - method="post"
-                        Esse métodos se usa para ter uma meçhor segurança de dados privados.
-                        Se o formulário passar de 3 mil bits pode usar esse método.
-                        Pode ser usado pra enviar arquivos.   
+                2° - method="post"
+                    Esse métodos se usa para ter uma meçhor segurança de dados privados.
+                    Se o formulário passar de 3 mil bits pode usar esse método.
+                    Pode ser usado pra enviar arquivos.   
 
-                autocomplete="on" 
-                    = (padrao) deixa ligado sugestao de informaçao para completar o formulário
+            autocomplete="on" 
+                = (padrao) deixa ligado sugestao de informaçao para completar o formulário
 
-                autocomplete="off" 
-                    = remove a suhjetsao de completar o formulário
-                
-                label 
-                    = serve para relacionar  o nome do campo ao imput atraves do for do label e o id do input
-                imput
-                    Topo de formulário. Existe diverçoes tipos de imput   
-                        type="text" 
-                            ex:tipo texto
+            autocomplete="off" 
+                = remove a suhjetsao de completar o formulário
 
-                        name="" 
-                        
-                        id=""
-                            relacionar ao label e ao DOM (J.S)
+            accept-charset="character_set"  
+                = Especifica as codificações de caracteres usadas para envio de formulário
+            
+            (ELEMENTO)    
+            label 
+                = serve para relacionar  o nome do campo ao imput atraves do for do label e o id do input
 
-                       required
-                            Informa que o campo é obrigatório  
+            (ELEMENTO)    
+            <imput type=" ">
+                Topo de formulário 
+                type""
+                    "button"
+                    "checkbox"
+                    "color"
+                    "date"
+                    "datetime-local"
+                    "email"
+                    "file".
+                    "hidden"
+                    "image"
+                    "month"
+                    "number"
+                    "password"
+                    "radio"
+                    "range"
+                    "reset"
+                    "search"
+                    "submit"
+                    "tel"
+                    "text"
+                    "time"
+                    "url"
+                    "week" 
 
-                       minlength="5" 
-                            Quantidade minima de caracteres (ex:5)
-                       
-                        maxlength="5" 
-                            Quantidade maxima de caracteres (ex:5)
-                        
-                        size="10"   
-                            tamanho da caixa do formulário
+                    (ATRIBUTOS)
+                    type="text" 
+                        ex:tipo texto
 
-                        placeholder="informe a senha"
-                            Mostra informação dentro da caixa do formulário  
-                        
-                        autocomplete="current-password" 
-                            fução para sugerir dado de acordo com o campo   
-                            Existe varios tipos de autocompletes foi feito exemplo com autocomplete="current-password" 
-                            para halitar essa funçao dentro do input  autocomplete da teg forme deve ta On
+                    name="" 
+                    
+                    id=""
+                        relacionar ao label e ao DOM (J.S)
 
-                        min="0"
-                            Espeficicar o numero minimo do imput nunber que é aceito 
+                    required
+                       O requiredatributo input especifica que um campo de entrada deve ser preenchido antes de enviar o formulário.
+                       O requiredatributo funciona com os seguintes tipos de entrada: text, search, url, tel, email, password, date pickers, number, checkbox, radio e file.                        
 
-                        max="10"
-                            Espeficicar o numero maximo do imput nunber que é aceito 
-                        
-                        value="0"
-                            Coloca um valor inicial no imput 
+                    minlength="5" 
+                        Quantidade minima de caracteres (ex:5)
+                    
+                    maxlength="5" 
+                        O maxlengthatributo de entrada especifica o número máximo de caracteres permitidos em um campo de entrada.
+                    
+                    size="10"   
+                        tamanho da caixa do formulário
 
-                        step="0.5"
-                            salto de (ex: 0.5) entre numeros min="0" e max="0"
+                    placeholder="informe a senha"
+                        O atributo input placeholderespecifica uma dica curta que descreve o valor esperado de um campo de entrada (um valor de amostra ou uma breve descrição do formato esperado).
+                        A dica curta é exibida no campo de entrada antes que o usuário insira um valor.
+                        O placeholderatributo funciona com os seguintes tipos de entrada: texto, pesquisa, url, tel, email e senha.
+                    
+                    autocomplete="current-password" 
+                        O atributo input autocomplete especifica se um formulário ou um campo de entrada deve ter o preenchimento automático ativado ou desativado.
+                        O preenchimento automático permite que o navegador preveja o valor. Quando um usuário começa a digitar em um campo, o navegador deve exibir opções para preencher o campo, com base nos valores digitados anteriormente.
+                        O autocompleteatributo funciona com <form>os seguintes <input>tipos: texto, pesquisa, url, tel, email, senha, datepickers, intervalo e cor.
 
-                        checked    
-                            marcar a caixa 
+                    min="0"
+                        Espeficicar o numero minimo do imput nunber que é aceito 
 
+                    max="10"
+                        Espeficicar o numero maximo do imput nunber que é aceito 
+                    
+                    value="0"
+                        O atributo input valueespecifica um valor inicial para um campo de entrada:
+
+                    step="0.5"
+                        salto de (ex: 0.5) entre numeros min="0" e max="0"
+
+                    checked    
+                        marcar a caixa
+
+                    readonly 
+                        O readonly atributo input especifica que um campo de entrada é somente leitura.
+
+                    disabled
+                       O disabledatributo input especifica que um campo de entrada deve ser desabilitado.
+                    
+                    multiple
+                        O multipleatributo funciona com os seguintes tipos de entrada: email e arquivo.
+                    
+                    pattern 
+                        O atributo input patternespecifica uma expressão regular com a qual o valor do campo de entrada é verificado quando o formulário é enviado.
+                        O patternatributo funciona com os seguintes tipos de entrada: texto, data, pesquisa, url, tel, email e senha.   
+                        Dica: Use o atributo global title para descrever o padrão para ajudar o usuário.
+                        Dica: saiba mais sobre expressões regulares em nosso tutorial de JavaScript.
+
+                    step="3"
+                        O atributo input stepespecifica os intervalos de números legais para um campo de entrada.
+                        Exemplo: if step="3", os números legais podem ser -3, 0, 3, 6, etc.
+                        Dica: Este atributo pode ser usado junto com os atributos max e min para criar um intervalo de valores válidos.
+                        O stepatributo funciona com os seguintes tipos de entrada: número, intervalo, data, data e hora local, mês, hora e semana.
+                     
+                    autofocus
+                        O autofocusatributo input especifica que um campo de entrada deve obter foco automaticamente quando a página for carregada.
+                     
+                    list=""  
+                        listO atributo input refere-se a um <datalist>elemento que contém opções pré-definidas para um elemento <input>.
+                            <form>
+                                <input list="browsers">
+                                <datalist id="browsers">
+                                    <option value="Internet Explorer">
+                                    <option value="Firefox">
+                                    <option value="Chrome">
+                                    <option value="Opera">
+                                    <option value="Safari">
+                                </datalist>
+                            </form>  
+
+            <select>
+            <textarea>
+            <button>
+            <fieldset>
+            <legend>
+            <datalist>
+            <output>
+            <option>
+            <optgroup>        
 
     -->
 </body>
