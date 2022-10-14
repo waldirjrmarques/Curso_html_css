@@ -1,10 +1,6 @@
 /* Regra @charset "UTF-8" caso haja problema com acentuação */
 @charset "UTF-8";
 
-/*PESQUISAR */
-.{
-    position: ;
-}
 
 *{ /*Configuração Globais das CSS */
     

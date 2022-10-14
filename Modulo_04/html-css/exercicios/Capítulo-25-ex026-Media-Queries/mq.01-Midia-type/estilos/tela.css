@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* Estilo TELA*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header{
+    background-color: darkgray;
+    padding: 20px 20px 15px 20px;
+    
+}
+h1{
+    text-align: center;
+    font-size: 2.5em;
+    padding-bottom: 30px;
+}
+
+ul{
+    
+}
+li{
+    display: inline-block;
+    background-color: aliceblue;
+    padding: 8px;
+    margin-right: 15px;
+    font-size: large;
+    font-weight: bolder;
+    border-radius: 2px 2px 8px 8px;
+    
+}
+main{
+    margin: auto;
+    width: 600px;
+    background-color: rgba(121, 121, 121, 0.425);
+    border-radius: 0px 0px 8px 8px;
+    
+}
+article{
+    text-align: justify;
+    padding: 20px;
+}
+h2{
+    margin-bottom: 10px;
+}
+p{
+    margin-bottom: 15px;
+    line-height: 1.5em;
+}
