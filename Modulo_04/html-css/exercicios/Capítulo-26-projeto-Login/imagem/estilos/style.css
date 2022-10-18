@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+
+/*
+    paleta de cores:
+    Verde: #49a09d
+    lilás: #5f2c82
+*/
+
+:root {
+    --verde: #49a09d;
+    --lilas: #5f2c82;
+
+}
+*{
+    font-family:Poppins,sans-serif; 
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body,html{
+    background-image: linear-gradient(to top,var(--lilas),var(--verde));
+    height: 100vh;
+    width: 100vw;
+
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login{
+    background-color: white;
+    height: 600px;
+    width: 350px;
+    border-radius: 20px;
+    position:absolute;
+    top:50%;
+    left:50%; 
+    transform: translate(-50% ,-50%); 
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    transition: width .3s,heigth .3s;
+    transition-timing-function: ease;
+
+}
+#imagem{
+    display: block;
+    background-image: url(../pexels-guru-saran-3667041.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 200px;
+}
+
+#formulario{
+    display: block;
+    padding: 10px;
+
+}
+
+
