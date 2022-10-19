@@ -8,6 +8,8 @@
 */
 
 :root {
+    --preto:black;
+    --branca: rgb(255, 255, 255);
     --verde: #49a09d;
     --lilas: #5f2c82;
 
@@ -33,7 +35,7 @@ main{
 
 #login{
     background-color: white;
-    height: 600px;
+    height: 550px;
     width: 350px;
     border-radius: 20px;
     position:absolute;
@@ -59,6 +61,99 @@ main{
     display: block;
     padding: 10px;
 
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+p{
+    font-size: 0.8em;
+}
+
+.campo{
+    background-color: var(--lilas);
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+    position: relative;
+}
+
+label{
+    display: none;
+}
+
+.material-symbols-outlined{
+    color: var(--branca);
+    height: 40px;
+    padding: 5px;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 45
+}
+form input{
+    background-color: var(--branca);
+    font-size: 1em;
+    height: 100%;
+
+    border-color: var(--lilas);
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 3px;
+
+    padding: 4px;
+    text-align: center;
+    width:calc(100% - 39px);
+        transform: translateY(-3px);
+    
+}
+form input:focus-within{
+    background-color: var(--branca);
+    border-color: var(--lilas);
+    outline-color: rgb(42, 165, 138);
+  
+}
+input[type="submit"]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    color: var(--branca);
+    background-color: var(--verde);
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: var(--lilas);
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--verde);
+}
+.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color:var(--verde);
+    color: var(--branca);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.botao:hover{
+    background-color: var(--lilas);
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--verde);
 }
 
 
