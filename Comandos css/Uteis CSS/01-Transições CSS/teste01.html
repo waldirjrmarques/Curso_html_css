@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:black;
+        }
+        section{  
+            color: white;
+            background-color: rgb(241, 7, 7);
+            border-radius: 0px 20px 20px 0px;
+            
+            /*Transições CSS*/
+            width: 100px;
+            height: 100px;
+
+            transition-property: height width;
+                /*
+                    Selecionar a propridade  que irá fazer a transição 
+                */
+
+            transition-duration: 2s;
+                /*
+                   Pripreidade para informar a duração da transição (Obrigadiro)  
+                */
+
+            transition-timing-function: ease;
+                /*
+                    ease - especifica um efeito de transição com um início lento, depois rápido e depois termina lentamente (este é o padrão) 
+
+                    linear- especifica um efeito de transição com a mesma velocidade do início ao fim
+
+                    ease-in- especifica um efeito de transição com um início lento
+
+                    ease-out- especifica um efeito de transição com um final lento
+
+                    ease-in-out- especifica um efeito de transição com início e fim lentos
+
+                    cubic-bezier(n,n,n,n)- permite definir seus próprios valores em uma função cúbica-bezier
+                */
+
+            
+                /*
+                    Atrasar o Efeito da Transição
+                */
+             
+            /*
+               Transição USANDO SHORTHAND 
+
+               transition: width 2s linear 3s;  
+                    1° -  transition-property
+                    2° -  transition-duration
+                    3° -  transition-timing-function  
+                    4° -  transition-delay
+            */    
+             }
+         section:hover {
+            
+            height: 300px;
+            width : 300px;
+            opacity: 1;
+            }
+    </style>
+</head>
+<body>
+    <section>
+        
+    </section>
+</body>
+</html>

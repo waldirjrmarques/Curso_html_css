@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        section{
+            margin-top:  100px;
+            margin-left:  100px;
+            border-radius: 50px;
+            height: 300px;
+            width: 300px;
+            background-color: red;
+
+            /*
+                Com a propriedade CSS transform você pode usar os seguintes métodos de transformação 2D:
+                    translate()
+                    rotate()
+                    scale()
+                    skewX()
+                    skewY()
+                    skew()
+                    matrix()
+            */
+
+        }
+        #translate{
+            transform:skew(20deg, 10deg) ; 
+                    /*  
+                       O skew()método inclina um elemento ao longo dos eixos X e Y pelos ângulos fornecidos.
+                       
+                       O exemplo a seguir inclina o elemento <section> 20 graus ao longo do eixo X e 10 graus ao longo do eixo Y:
+
+                       e o segundo parâmetro não for especificado, ele terá um valor zero. Portanto, o exemplo a seguir inclina o elemento <section> 20 graus ao longo do eixo X: 
+                    */
+        }
+    </style>
+</head>
+<body>
+    <section id="translate">
+
+    </section>
+</body>
+</html>
