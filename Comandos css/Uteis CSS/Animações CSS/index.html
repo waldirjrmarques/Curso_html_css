@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+
+        /*
+            A regra @keyframes
+            Quando você especifica estilos CSS dentro da @keyframes regra, a animação mudará gradualmente do estilo atual para o novo estilo em determinados momentos.
+            Para que uma animação funcione, você deve vincular a animação a um elemento.
+
+            O exemplo a seguir vincula a animação "example" ao elemento <div>. A animação durará 4 segundos e mudará gradualmente a cor de fundo do elemento <div> de "vermelho" para "amarelo":
+        */
+        @keyframes mudancadecor {
+            0% {transform: rotate(0deg);}
+            25% {transform: rotate(0deg);}
+            50% {transform: rotate(360deg);margin-left: 1000px;}
+            70% {transform: rotate(0deg);}
+            100% {transform: rotate(0deg);;}
+            
+            from {transform: rotate(360deg);}     
+            to {transform: rotate(0deg);}
+         
+        }
+           /*
+           Outras opção de declarar a transição
+                @keyframes example {
+                    0%   {background-color: red;}
+                    25%  {background-color: yellow;}
+                    50%  {background-color: blue;}
+                    100% {background-color: green;}
+                }
+
+                @keyframes mudancadecor {
+                    from {background-color: red; width: 300px; height: 300px;}     
+                    to {background-color:yellow;width: 400px;height: 400px;}  
+                 } 
+
+                @keyframes mudancadecor {
+                    0% {transform: rotate(0deg);left:0px;}
+                    25% {transform: rotate(20deg);left:0px;}
+                    50% {transform: rotate(0deg);left:500px;}
+                    55% {transform: rotate(0deg);left:500px;}
+                    70% {transform: rotate(0deg);left:500px;background:#1ec7e6;}
+                    100% {transform: rotate(-360deg);left:0px;}
+                } 
+                    
+           */ 
+        
+        section{
+            margin-left: 100px;
+            margin-top: 100px;
+            border-radius: 50px;
+            height: 300px;
+            width: 300px;
+            background-color:blue;
+            
+            /* Propriedades importantes para realizar a animação */
+               
+                animation-name: mudancadecor; 
+                /*Informar o nome da animação ex:(mudancadecor)*/
+
+                animation-duration: 5s; 
+                /*A animation-durationpropriedade define quanto tempo uma animação deve levar para ser concluída.*/
+
+                animation-delay: 1s; 
+                /*A animation-delaypropriedade especifica um atraso para o início de uma animação.Valores negativos também são permitidos. Se estiver usando valores negativos, a animação começará como se já estivesse tocando por N segundos.*/
+
+            /*Propriedades opcionais para realizar a anumação*/  
+
+                animation-iteration-count: 1lk ; 
+                /* A animation-iteration-countpropriedade especifica o número de vezes que uma animação deve ser executada. pode colocar a função infinite */ 
+
+                animation-direction:normal; 
+                /* A animation-directionpropriedade especifica se uma animação deve ser reproduzida para frente, para trás ou   em   ciclos alternados.
+                A propriedade animation-direction pode ter os seguintes valores:
+                    normal- A animação é reproduzida normalmente (para a frente). Isso é padrão
+                    reverse- A animação é reproduzida na direção inversa (para trás)
+                    alternate - A animação é reproduzida primeiro para a frente e depois para trás
+                    alternate-reverse- A animação é reproduzida primeiro para trás e depois para a frente*/
+
+                animation-timing-function: ease;
+                /* A animation-timing-functionpropriedade especifica a curva de velocidade da animação.
+                A propriedade animation-timing-function pode ter os seguintes valores:
+                    ease- Especifica uma animação com início lento, rápido e final lento (este é o padrão)
+                    linear- Especifica uma animação com a mesma velocidade do início ao fim
+                    ease-in- Especifica uma animação com um início lento
+                    ease-out- Especifica uma animação com um final lento
+                    ease-in-out- Especifica uma animação com início e fim lentos
+                    cubic-bezier(n,n,n,n)- Permite definir seus próprios valores em uma função cúbica-bezier*/
+                
+                animation-fill-mode: none;    
+                /* As animações CSS não afetam um elemento antes da reprodução do primeiro quadro-chave ou após a reprodução do último quadro-chave. A propriedade do modo de preenchimento de animação pode substituir esse comportamento.
+                A animation-fill-modepropriedade especifica um estilo para o elemento de destino quando a animação não está sendo reproduzida (antes de começar, depois de terminar ou ambos).
+                A propriedade animation-fill-mode pode ter os seguintes valores:
+                    none- Valor padrão. A animação não aplicará nenhum estilo ao elemento antes ou depois de ser executado
+                    forwards- O elemento manterá os valores de estilo definidos pelo último quadro-chave (depende da direção da animação e da contagem de iteração da animação)
+                    backwards- O elemento obterá os valores de estilo definidos pelo primeiro quadro-chave (depende da direção da animação) e reterá isso durante o período de atraso da animação
+                    both- A animação seguirá as regras para frente e para trás, estendendo as propriedades da animação em ambas as direções
+                */
+
+
+
+                /*SHORTHAND / FORMA ABREVIADA
+                    section {
+                        animation-name: mudancadecor;
+                        animation-duration: 4s;
+                        animation-timing-function: ease;
+                        animation-delay: 2s;
+                        animation-iteration-count: 2;
+                        animation-direction: normal;
+                        }
+
+                    section {
+                    animation: mudancadecor 4s ease 2s 2 normal;} 
+                */   
+                
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <section id="rotacao">
+
+    </section>
+</body>
+</html>
