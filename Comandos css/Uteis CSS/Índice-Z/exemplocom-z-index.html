@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*
+            A propriedade z-index
+            Quando os elementos são posicionados, eles podem se sobrepor a outros elementos.
+            A z-indexpropriedade especifica a ordem de pilha de um elemento (qual elemento deve ser colocado na frente ou atrás dos outros).
+            Um elemento pode ter uma ordem de pilha positiva ou negativa:
+            Nota: z-index só funciona em elementos posicionados (posição: absoluto, posição: relativa, posição: fixo ou posição: fixo) e itens flex (elementos que são filhos diretos de display: elementos flex).
+        */
+        .container {
+        position: relative;
+        }
+
+        .black-box {
+        position: relative;
+        z-index: 1; /*div de fundo*/
+        border: 2px solid black;
+        height: 100px;
+        margin: 30px;
+        }
+
+        .gray-box {
+        position: absolute;
+        z-index: 3;/* div primeira*/
+        background: lightgray;
+        height: 60px;
+        width: 70%;
+        left: 50px;
+        top: 50px;
+        }
+
+        .green-box {
+        position: absolute;
+        z-index: 2; /* div meio*/
+        background: lightgreen;
+        width: 35%;
+        left: 270px;
+        top: -15px;
+        height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="black-box">Black box</div>
+        <div class="gray-box">Gray box</div>
+        <div class="green-box">Green box</div>
+    </div>
+</body>
+</html>
