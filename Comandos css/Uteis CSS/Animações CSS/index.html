@@ -18,15 +18,14 @@
             O exemplo a seguir vincula a animação "example" ao elemento <div>. A animação durará 4 segundos e mudará gradualmente a cor de fundo do elemento <div> de "vermelho" para "amarelo":
         */
         @keyframes mudancadecor {
-            0% {transform: rotate(0deg);}
-            25% {transform: rotate(0deg);}
-            50% {transform: rotate(360deg);margin-left: 1000px;}
-            70% {transform: rotate(0deg);}
-            100% {transform: rotate(0deg);;}
             
-            from {transform: rotate(360deg);}     
-            to {transform: rotate(0deg);}
-         
+       
+        0% {transform: rotate(0deg);} /*Inicio da execução */ 
+        25% {transform:rotateY(110deg);}
+        50% {transform: rotate(360deg);margin-left:1000px;}/*Metade da excução*/
+        55% {transform:rotateZ(110deg)}
+        100% {transform:rotate(0deg);background-color: crimson;} /*Fim da execução*/  
+    
         }
            /*
            Outras opção de declarar a transição
@@ -54,6 +53,7 @@
            */ 
         
         section{
+            display: inline-block;
             margin-left: 100px;
             margin-top: 100px;
             border-radius: 50px;
@@ -74,7 +74,7 @@
 
             /*Propriedades opcionais para realizar a anumação*/  
 
-                animation-iteration-count: 1lk ; 
+                animation-iteration-count: infinite ; 
                 /* A animation-iteration-countpropriedade especifica o número de vezes que uma animação deve ser executada. pode colocar a função infinite */ 
 
                 animation-direction:normal; 
@@ -127,8 +127,10 @@
     </style>
 </head>
 <body>
-    <section id="rotacao">
+    <section>
 
     </section>
+   
+    
 </body>
 </html>
