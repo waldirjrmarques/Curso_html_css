@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout - float and clear</title>
+    <style>
+
+        /*
+            Layout CSS - flutuar e limpar
+                A propriedade CSS floatespecifica como um elemento deve flutuar.
+                A propriedade CSS clearespecifica quais elementos podem flutuar ao lado do elemento limpo e de que lado.
+                A propriedade flutuante
+                A float propriedade é usada para posicionar e formatar o conteúdo, por exemplo, deixar uma imagem flutuar à esquerda do texto em um contêiner.
+                A floatpropriedade pode ter um dos seguintes valores:
+                    left- O elemento flutua à esquerda de seu contêiner
+                    right- O elemento flutua à direita de seu contêiner
+                    none- O elemento não flutua (será exibido exatamente onde ocorre no texto). Isso é padrão
+                    inherit- O elemento herda o valor float de seu pai
+
+        */  
+        body{
+            background-color: rgb(216, 216, 216);
+        }
+        div{
+            background-color: aquamarine;
+            height: 150px;
+            width: 700px;
+          
+        }
+        img{
+            width:170px;
+            height:190px;
+            margin-left:30px;
+
+            float:right; /*<-Imagem flutua a direita*/
+           
+         
+        }
+         
+    </style>
+</head>
+<body>
+    <div> 
+        <h2>Flutuar à direita</h2>
+
+        <p>In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap around the image.</p>
+        <p><img src="pineapple.jpg" alt="Pineapple">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+
+    </div>
+    
+      
+</body>
+</html>

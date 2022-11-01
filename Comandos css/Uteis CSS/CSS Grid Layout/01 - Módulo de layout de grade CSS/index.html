@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout </title>
+    <style>
+        /*
+            Layout de grade
+                O CSS Grid Layout Module oferece um sistema de layout baseado em grid, com linhas e colunas, facilitando o design de páginas web sem a necessidade de usar floats e posicionamento.
+
+            Propriedade de exibição
+                Um elemento HTML se torna um contêiner de grade quando sua display propriedade é definida como grid.
+                Todos os filhos diretos do contêiner de grade automaticamente se tornam itens de grade
+
+            Grid Columns (coluna |) 
+                As linhas verticais dos itens da grade são chamadas de colunas . 
+            
+            Grid Rows (linha __ )
+                As linhas horizontais dos itens da grade são chamadas de linhas .
+
+            Os espaços entre cada coluna/linha são chamados de gaps .
+                Column gap
+                Row gap 
+
+                Você pode ajustar o tamanho da lacuna usando uma das seguintes propriedades
+
+                    row-gap:20px; - A row-gappropriedade define o intervalo entre as linhas:
+
+                    column-gap:15px; - A column-gap propriedade define o intervalo entre as colunas:
+
+                    gap: 20px 15px ; - A gap propriedade também pode ser usada para definir o intervalo de linha e o intervalo de coluna em um valor:
+            
+            Grid Lines  (quantas linha e colounas vao se ocupada com a div)  
+                As linhas entre as colunas são chamadas de linhas de coluna .
+                    grid-column-start:;
+                    grid-column-end:;
+
+                As linhas entre as linhas são chamadas de linhas de linha .
+                    grid-row-start:;
+                    grid-row-end:;     
+        */  
+        /*div pricipal */
+        .grid-container{
+            background-color: #2196F3;
+            padding: 10px;
+
+            /*CSS Grid Layout*/
+            display: grid; /**/
+                grid-template-columns: auto auto auto;
+                row-gap:20px;
+                column-gap:15px;
+                gap: 20px 15px ;
+           
+        }
+        /*divs dentro do container */
+        .grid-container > div{
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        /*cada divs */
+        .grid-item1{
+            /*
+            de culona 1 até linha x
+            */
+            grid-column-start:1;
+            grid-column-end:3;
+        }
+        .grid-item3{
+            /*
+            de lina 1 até linha x
+            */
+            grid-row-start:2;
+            grid-row-end:5;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item1">1</div>
+        <div class="grid-item2">2</div>
+        <div class="grid-item3">3</div>
+        <div class="grid-item4">4</div>
+        <div class="grid-item5">5</div>
+        <div class="grid-item6">6</div>
+        <div class="grid-item7">7</div>
+        <div class="grid-item8">8</div>
+        
+      </div>
+</body>
+</html>

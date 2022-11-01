@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item de grade CSS</title>
+    <style>
+        /*
+            Item de grade CSS
+
+                Elementos filhos (itens)
+                Um contêiner de grade contém itens de grade .
+
+                Por padrão, um contêiner tem um item de grade para cada coluna, em cada linha, mas você pode estilizar os itens de grade para que eles abranjam várias colunas e/ou linhas.
+
+            A propriedade da coluna da grade:
+                A grid-column propriedade define em qual(is) coluna(s) colocar um item.
+                    Você define onde o item começará e onde o item terminará.
+                Nota: A grid-column propriedade é uma propriedade abreviada para o grid-column-starte as grid-column-end propriedades. 
+                Para colocar um item, você pode consultar os números de linha ou usar a palavra-chave "span" para definir quantas colunas o item abrangerá.
+            
+            A propriedade grid-row:
+                A grid-row propriedade define em qual linha colocar um item.
+                Você define onde o item começará e onde o item terminará. 
+                Nota: A grid-row propriedade é uma propriedade abreviada para o grid-row-starte as grid-row-end propriedades.
+
+                Para colocar um item, você pode consultar os números de linha ou usar a palavra-chave "span" para definir quantas linhas o item abrangerá:  
+            
+            A propriedade de área de grade
+                A grid-area propriedade pode ser usada como uma propriedade abreviada para grid-row-start, grid-column-starte grid-row-endas grid-column-end propriedades.    
+            
+            Nomeando itens de grade
+                A grid-area propriedade também pode ser usada para atribuir nomes a itens de grade.
+                Itens de grade nomeados podem ser referenciados pela grid-template-areas propriedade do contêiner de grade.
+
+
+        */  
+        /*div pricipal */
+        .grid-container{
+            background-color: #2196F3;
+            padding: 10px;
+        
+            /*CSS Grid Layout*/
+            display: grid; /**/
+                grid-template-columns: 30% auto auto;
+                
+        }
+        /*cada divs */
+        .grid-item1{
+            /* grid-column:1/span 2;*/
+          
+        }
+        .grid-item3{
+            /* grid-row: 2/ span 4; */
+        }
+        .grid-item5{
+            /*
+           A sintaxe é grid-row-start / grid-column-start / grid-row-end / grid-column-end.
+            */
+            grid-area: 2 /  1/ span 5 / span  2; 
+        }
+
+
+    
+        /*divs dentro do container */
+        .grid-container > div{
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(168, 21, 21, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+    
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item1">1</div>
+        <div class="grid-item2">2</div>
+        <div class="grid-item3">3</div>
+        <div class="grid-item4">4</div>
+        <div class="grid-item5">5</div>
+        <div class="grid-item6">6</div>
+        <div class="grid-item7">7</div>
+        <div class="grid-item8">8</div>
+        <div class="grid-item9">9</div>
+        <div class="grid-item10">10</div>
+          
+    </div>
+</body>
+</html>

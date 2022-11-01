@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout </title>
+    <style>
+        /*
+            Contêiner de Grade
+                Para fazer um elemento HTML se comportar como um contêiner de grade, você deve definir a displaypropriedade como gridou inline-grid.
+
+                Os contêineres de grade consistem em itens de grade, colocados dentro de colunas e linhas.
+            
+            A propriedade grid-template-columns
+                A grid-template-columnspropriedade define o número de colunas em seu layout de grade e pode definir a largura de cada coluna.
+                O valor é uma lista separada por espaços, onde cada valor define a largura da respectiva coluna.
+                Se você quiser que seu layout de grade contenha 4 colunas, especifique a largura das 4 colunas ou "auto" se todas as colunas tiverem a mesma largura. 
+                    Faça uma grade com 4 colunas: grid-template-columns: 30% auto 35% auto;
+            
+            A propriedade grid-template-rows
+                A grid-template-rowspropriedade define a altura de cada linha.   
+                O valor é uma lista separada por espaços, onde cada valor define a altura da respectiva linha: grid-template-rows: 80px 200px;
+            
+            A propriedade justificar-conteúdo
+                A justify-contentpropriedade é usada para alinhar toda a grade dentro do container. 
+                Observação: a largura total da grade deve ser menor que a largura do contêiner para que a justify-content propriedade tenha algum efeito.
+                 
+                    justify-content: space-evenly;
+                    justify-content: space-around;
+                    justify-content: space-between;
+                    justify-content: center;
+                    justify-content: start;
+                    justify-content: end;
+
+            A propriedade align-content
+                A align-contentpropriedade é usada para alinhar verticalmente toda a grade dentro do container. 
+                Nota: A altura total da grade deve ser menor que a altura do contêiner para que a align-content propriedade tenha algum efeito.
+                    
+                    align-content: center;
+                    align-content: space-evenly;
+                    align-content: space-around;
+                    align-content: space-between;
+                    align-content: start;
+                    align-content: end;
+
+        */  
+        /*div pricipal */
+        .grid-container{
+            background-color: #2196F3;
+            padding: 10px;
+            height: 300px;
+
+            /*CSS Grid Layout*/
+            display: grid; /**/
+                grid-template-columns: 30% auto 35% auto; /*cada valor declarado coresponde a uma coluna e o tamanho dela */
+                grid-template-rows: 30% 40%;/* tamanho de cada linha da grade*/
+
+                justify-content:center;
+                
+                align-content: center;
+           
+        }
+
+
+        /*divs dentro do container */
+        .grid-container > div{
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(168, 21, 21, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item1">1</div>
+        <div class="grid-item2">2</div>
+        <div class="grid-item3">3</div>
+        <div class="grid-item4">4</div>
+        <div class="grid-item5">5</div>
+        <div class="grid-item6">6</div>
+        <div class="grid-item7">7</div>
+        <div class="grid-item8">8</div>
+        
+      </div>
+</body>
+</html>

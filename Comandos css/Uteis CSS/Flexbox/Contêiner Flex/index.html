@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        /*
+            Elementos do Flexbox
+            Para começar a usar o modelo Flexbox, você precisa primeiro definir um contêiner flex.
+            As propriedades do contêiner flexível são:
+             display: flex;
+                flex-direction:;            
+                flex-wrap: ; 
+                flex-flow: ;
+                justify-content: ;
+                align-items: ; 
+                align-content: ;
+                 
+        */
+        .flex-container {
+            width: 90vw;
+            height: 600px;
+            
+            background-color: DodgerBlue;
+
+            display: flex; /* O contêiner flexível se torna flexível definindo a displaypropriedade como flex:*/
+                flex-direction:row; /*A flex-direction propriedade define em qual direção o container deseja empilhar os itens flexíveis.*/
+                            /*
+                              column -  O column valor empilha os itens flexíveis verticalmente (de cima para baixo): 
+                              column-reverse -  O column-reversevalor empilha os itens flexíveis verticalmente (mas de baixo para cima): 
+                              row -  O rowvalor empilha os itens flexíveis horizontalmente (da esquerda para a direita):
+                              row-reverse - O row-reversevalor empilha os itens flexíveis horizontalmente (mas da direita para a esquerda):
+                            */
+
+                flex-wrap:wrap; /* A flex-wrappropriedade especifica se os itens flexíveis devem ser encapsulados ou não.*/
+                           /*
+                             nowrap - O nowrapvalor especifica que os itens flexíveis não serão encapsulados (este é o padrão): 
+                             wrap - O wrapvalor especifica que os itens flexíveis serão encapsulados, se necessário:
+                             wrap-reverse -  O wrap-reversevalor especifica que os itens flexíveis serão agrupados, se necessário, na ordem inversa:
+
+                           */
+                flex-flow: row wrap; /* A flex-flowpropriedade é uma propriedade abreviada para definir as propriedades flex-directione flex-wrap. */
+                 
+                justify-content:space-around;/* A justify-content propriedade é usada para alinhar os itens flexíveis:*/
+                          /*
+                            flex-start - O flex-startvalor alinha os itens flexíveis no início do contêiner (este é o padrão): 
+                            center -  O centervalor alinha os itens flexíveis no centro do contêiner:
+                            flex-end -  O flex-end valor alinha os itens flexíveis no final do contêiner:
+                            space-around - O space-aroundvalor exibe os itens flexíveis com espaço antes, entre e depois das linhas:
+                            space-between - O space-betweenvalor exibe os itens flexíveis com espaço entre as linhas:
+                            
+                          */
+                align-items:baseline; /* A align-itemspropriedade é usada para alinhar os itens flexíveis. */
+                         /*
+                            stretch -  O stretchvalor estica os itens flexíveis para preencher o contêiner (este é o padrão):
+                            center - O centervalor alinha os itens flexíveis no meio do contêiner:
+                            flex-start - O flex-startvalor alinha os itens flexíveis na parte superior do contêiner:
+                            flex-end -  O flex-endvalor alinha os itens flexíveis na parte inferior do contêiner:
+                            baseline -  O baselinevalor alinha os itens flexíveis, como suas linhas de base alinham:
+                         */
+                align-content:flex-start; /* A align-contentpropriedade é usada para alinhar as linhas flexíveis.*/
+                         /*
+                            stretch - O stretchvalor estica as linhas flexíveis para ocupar o espaço restante (este é o padrão): 
+                            space-between - O space-betweenvalor exibe as linhas flexíveis com espaço igual entre elas:
+                            space-around -  O space-aroundvalor exibe as linhas flexíveis com espaço antes, entre e depois delas: 
+                            center - O centervalor exibido exibe as linhas flexíveis no meio do contêiner: 
+                            flex-start - O flex-startvalor exibe as linhas flexíveis no início do contêiner:
+                            flex-end - O flex-endvalor exibe as linhas flexíveis no final do contêiner: 
+    
+                         */
+                     
+        }
+
+        section {
+            background-color: #f1f1f1;
+            width: 200px;
+            height: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+            
+        }
+    </style>
+</head>
+<body>
+    <section class="flex-container">
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+        <section>4</section>
+        <section>5</section>
+        <section>6</section>
+        <section>7</section>
+        <section>8</section>
+        <section>9</section>
+        <section>10</section>
+        <section>11</section>
+        <section>12</section>
+
+    </section>
+</body>
+</html>

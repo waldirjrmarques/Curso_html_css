@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item de grade CSS</title>
+    <style>
+        /*
+    
+            Nomeando itens de grade
+                A grid-area propriedade também pode ser usada para atribuir nomes a itens de grade.
+                Itens de grade nomeados podem ser referenciados pela grid-template-areas propriedade do contêiner de grade.
+
+            Para definir duas linhas, defina a coluna da segunda linha dentro de outro conjunto de apóstrofos:    
+
+
+        */  
+        /*divs*/
+    
+        .item1{
+            grid-area: myArea;
+        }
+         /*div pricipal */
+        .grid-container {
+             gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+
+            /*CSS Grid Layout*/
+            display: grid;
+                /* Faça com que "item1" abranja 3 colunas e 3 linhas:*/
+                grid-template-areas: 'myArea myArea  .' 'myArea myArea . ';
+           
+        }
+        /*divs dentro do container */
+        .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        }
+</style>
+    </style>
+</head>
+<body>
+    <h1>A propriedade de área de grade</h1>
+    <p>Você pode usar a propriedade grid-area para nomear itens de grade.</p>
+    <p>Você pode consultar o nome ao configurar o layout da grade, usando a propriedade grid-template-areas no contêiner da grade.</p>
+    <p>Item1, chama-se "myArea" e ocupará o lugar de duas colunas (de cinco):</p>
+
+    <div class="grid-container">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>  
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+    <div class="item6">6</div>
+    <div class="item7">7</div>
+    <div class="item8">8</div>
+    <div class="item9">9</div>
+    </div>
+
+</body>
+</html>

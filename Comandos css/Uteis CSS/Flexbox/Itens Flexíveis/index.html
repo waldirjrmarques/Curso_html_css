@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itens Flexíveis CSS</title>
+    <style>
+        /*
+            As propriedades do item flexível são:
+                order
+                flex-grow
+                flex-shrink
+                flex-basis
+                flex
+                align-self
+
+                 
+        */
+        .flex-container {
+            width: 90vw;
+            height: auto;
+            background-color: DodgerBlue;
+
+            display: flex; /* O contêiner flexível se torna flexível definindo a displaypropriedade como flex:*/
+                     
+        }
+
+        section {
+            background-color: #f1f1f1;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+            
+        }
+        /*
+            As propriedades do item flexível são:
+                order - A order propriedade especifica a ordem dos itens flexíveis.o valor padrão é 0
+
+                flex-grow - A flex-grow propriedade especifica quanto um item flexível crescerá em relação ao restante dos itens flexíveis.O valor deve ser um número, o valor padrão é 0.
+
+                flex-shrink - A flex-shrinkpropriedade especifica quanto um item flexível diminuirá em relação ao restante dos itens flexíveis. O valor deve ser um número, o valor padrão é 1.
+
+                flex-basis - A flex-basis propriedade especifica o comprimento inicial de um item flexível em pixels
+
+                flex - A flexpropriedade é uma propriedade abreviada para as propriedades flex-grow, flex-shrinke flex-basis
+
+                align-self - A align-selfpropriedade especifica o alinhamento do item selecionado dentro do contêiner flexível. 
+                A align-self propriedade substitui o alinhamento padrão definido pela align-itemspropriedade do contêiner.
+
+        */
+
+        #section1{
+            order:6;  
+        }
+        #section2{
+            
+            flex-grow:1;
+        }
+        #section3{ 
+            flex-shrink:2;
+           
+        }
+        #section4{
+            flex-basis:200px;
+        }
+        #section5{
+           flex:1 2 200px ;
+        }
+        #section6{
+            height: 100px;
+            align-self:flex-end; 
+            /*
+                align-self:center; alinha ao centro
+                align-self: flex-start; alinha no topo
+                align-self: flex-end; alinha  no fim
+            */
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <section class="flex-container">
+        <section id="section1">1</section>
+        <section id="section2">2</section>
+        <section id="section3">3</section>
+        <section id="section4">4</section>
+        <section id="section5">5</section>
+        <section id="section6">6</section>
+    </section>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item de grade CSS</title>
+    <style>
+        /*
+    
+            Nomeando itens de grade
+                A grid-area propriedade também pode ser usada para atribuir nomes a itens de grade.
+                Itens de grade nomeados podem ser referenciados pela grid-template-areas propriedade do contêiner de grade.
+
+            Exemplo
+                Nomeie todos os itens e crie um modelo de página da Web pronto para uso:    
+
+
+        */  
+        /*divs */
+        .item1 { grid-area: header; }
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: right; }
+        .item5 { grid-area: footer; }
+    
+         /*div pricipal */
+        .grid-container {
+             gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+
+            /*CSS Grid Layout*/
+            display: grid;
+                
+                grid-template-areas:
+                    'header header header header header '
+                    'menu menu main main right '
+                    'menu menu footer footer footer ';
+           
+        }
+        /*divs dentro do container */
+        .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        }
+</style>
+    </style>
+</head>
+<body>
+    <h1>A propriedade de área de grade</h1>
+    <p>Você pode usar a propriedade grid-area para nomear itens de grade.</p>
+    <p>Você pode consultar o nome ao configurar o layout da grade, usando a propriedade grid-template-areas no contêiner da grade.</p>
+    <p>Este layout de grade contém seis colunas e três linhas::</p>
+
+  
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">Menu</div>
+        <div class="item3">Main</div>  
+        <div class="item4">Right</div>
+        <div class="item5">Footer</div>
+      </div>
+    
+</body>
+</html>
