@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <title>Document</title>
+    <style>
+        .col{
+            background-color: rgb(206, 220, 235);
+            margin: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+      Bootstrap 5 Grid System
+        O sistema de grade do Bootstrap é construído com flexbox e permite até 12 colunas na página.
+        Se você não quiser usar todas as 12 colunas individualmente, poderá agrupar as colunas para criar colunas mais amplas:
+        O sistema de grade é responsivo e as colunas serão reorganizadas automaticamente dependendo do tamanho da tela.
+        Certifique-se de que a soma seja 12 ou menos (não é necessário que você use todas as 12 colunas disponíveis).
+    Classes de grade
+        O sistema de grade do Bootstrap 5 tem seis classes:
+            .col-(dispositivos extra pequenos - largura da tela menor que 576px)
+            .col-sm-(pequenos dispositivos - largura da tela igual ou superior a 576px)
+            .col-md-(dispositivos médios - largura da tela igual ou superior a 768px)
+            .col-lg-(dispositivos grandes - largura da tela igual ou superior a 992px)
+            .col-xl-(dispositivos extragrandes - largura da tela igual ou superior a 1200px)
+            .col-xxl-(xxdispositivos grandes - largura da tela igual ou superior a 1400px)
+    As classes acima podem ser combinadas para criar layouts mais dinâmicos e flexíveis.
+    Dica: cada classe é dimensionada, portanto, se você quiser definir as mesmas larguras para sm e md, precisará apenas especificar sm.
+    -->
+
+    <!-- Estrutura Básica de uma Grade Bootstrap 5 
+    
+       Controle a largura das colunas e como elas devem aparecer em diferentes dispositivos
+    <div class="row">
+        <div class="col-*-*"></div>
+        <div class="col-*-*"></div>
+    </div>
+    <div class="row">
+        <div class="col-*-*"></div>
+        <div class="col-*-*"></div>
+        <div class="col-*-*"></div>
+    </div>
+    
+    Ou deixe o Bootstrap lidar automaticamente com o layout
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+    
+    -->
+
+    
+    <!--ex01 linha 1-->
+    <div class="row">
+        <div class="col-sm-4">c1</div>
+        <div class="col-md-4">c2</div>
+        <div class="col-lg-4">c2</div>
+        
+        <!--
+            Primeiro exemplo: crie uma linha ( <div class="row">). Em seguida, adicione o número desejado de colunas (tags com .col-*-*classes apropriadas). A primeira estrela (*) representa a capacidade de resposta: sm, md, lg, xl ou xxl, enquanto a segunda estrela representa um número, que deve somar 12 para cada linha.
+        -->
+    </div>
+
+     <!--ex01 linha 2-->
+    <div class="row">
+        <div class="col 33,33%">c1</div>
+        <div class="col 33,33%">c2</div>
+        <div class="col 33,33%">c3</div>
+        <!--
+            Segundo exemplo: em vez de adicionar um número a cada col, deixe o bootstrap manipular o layout, para criar colunas de largura igual: dois "col"elementos = 50% de largura para cada coluna, enquanto três colunas = 33,33% de largura para cada coluna. Quatro colunas = 25% de largura, etc. Você também pode usar .col-sm|md|lg|xl|xxl para tornar as colunas responsivas.
+        -->
+    </div>
+      
+     <!--ex01 linha 3-->
+    <div class="row">
+        <div class="col">c1</div>
+        <div class="col">c2</div>
+        <div class="col">c3</div>
+        <!--
+            deixe o Bootstrap lidar automaticamente com o layout
+        -->
+    </div>
+    
+</body>
+</html>
