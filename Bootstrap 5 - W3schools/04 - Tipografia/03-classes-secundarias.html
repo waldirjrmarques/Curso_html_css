@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <title>Document</title>
+</head>
+<body>
+    <!--classes secundárias -->
+
+
+    <div class="container mt-3">
+
+        <!--
+            <small>
+                elemento HTML (e a .small classe) é usado para criar um texto secundário menor em qualquer título:
+        -->
+        <p><small>texto secundário</small> </p>
+
+        <!--
+            <mark>
+                e .mark com uma cor de fundo amarela e algum preenchimento: 
+            <abbr>elemento HTML com uma borda pontilhada inferior e um cursor com ponto de interrogação ao passar o mouse:
+        -->
+        <p><mark>destaque</mark></p>
+
+        <!--
+            <abbr>
+                abreviação elemento HTML com uma borda pontilhada inferior e um cursor com ponto de interrogação ao passar o mouse: 
+        -->
+        <p><abbr title="w3schools">W3s</abbr></p>
+
+        <!--
+            <blockquote>    
+                Adicione a .blockquote classe a a <blockquote> ao citar blocos de conteúdo de outra fonte. E ao nomear uma fonte, como "do site do WWF", use a .blockquote-footer classe:
+        -->
+        <p><blockquote>www.w3schools.com</blockquote> </p>
+        <p class="blockquote">www.w3schools.com</p>
+        <p class="blockquote-footer">www.w3schools.com</p>
+
+        <!--
+            <dl>
+                O Bootstrap 5 estilizará o elemento HTML <dl>da seguinte maneira:  
+                O elemento dl indica uma lista de descrição:      
+        -->
+        <p>  
+            <dl> 
+                <dt>Café</dt>
+                <dd>- bebida quente preta</dd>
+                <dt>Leite</dt>
+                <dd>- bebida gelada branca</dd>
+            </dl> 
+        </p>
+
+        <!--
+            <code>
+                da seguinte maneira:
+        -->
+        <p>Os seguintes elementos HTML:<code> span</code>,<code>section</code>, e <code>div</code> define uma seção em um documento.</p>
+
+        <!--
+            <kbd>
+                da seguinte maneira:
+        -->
+        <p>Use <kbd>ctrl + p</kbd> para abrir a caixa de diálogo Imprimir.</p>
+
+        <!--
+            <pre>
+                da seguinte maneira:
+                Para várias linhas de código, use o elemento pre:
+        -->
+        <p>
+            <pre>
+                num = int(input('Digite um número'))
+                if num % 2 == 0:
+                print(f'O número {num} é PAR')
+                else:
+                print(f'O número {num} é ÍMPAR')
+                print('Fim do programa')  
+            </pre>
+        </p>
+
+        <!--
+            Mais aulas de tipografia
+                s classes do Bootstrap 5 abaixo podem ser adicionadas para estilizar ainda mais os elementos HTML:
+
+                .lead Faz um parágrafo se destacar
+                .text-start Indica o texto alinhado à esquerda
+                .text-break Evita que o texto longo quebre o layout
+                .text-center Indica texto alinhado ao centro
+                .text-decoration-none Remove o sublinhado de um link
+                .text-end Indica texto alinhado à direita
+                .text-nowrap Indica que não há quebra de texto
+                .text-lowercase Indica texto em minúsculas
+                .text-uppercase Indica texto em maiúsculas
+                .text-capitalize Indica texto em maiúsculas
+                .initialism Exibe o texto dentro de um elemento <abbr> em um tamanho de fonte um pouco menor
+                .list-unstyled Remove o estilo de lista padrão e a margem esquerda nos itens da lista (funciona em <ul> e <ol>). Esta classe se aplica apenas a itens de lista filhos imediatos (para remover o estilo de lista padrão de qualquer lista aninhada, aplique essa classe também a qualquer lista aninhada)
+                .list-inline Coloca todos os itens da lista em uma única linha (usada junto com .list-inline-item em cada elemento <li>)   
+
+        -->
+    </div>
+</body>
+</html>
