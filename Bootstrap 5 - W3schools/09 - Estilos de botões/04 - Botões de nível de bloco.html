@@ -18,11 +18,19 @@
     <title>Document</title>
 </head>
 <body>
+    
     <!--
-       
+        Botões de nível de bloco
+        Para criar um botão de nível de bloco que abrange toda a largura do elemento pai, use a .d-grid classe "helper" no elemento pai:
+        Se você tiver muitos botões de nível de bloco, poderá controlar o espaço entre eles com a .gap-:
     -->
-    <div class="container  mt-5">
-        
+    <div class="container  mt-5 gap-2">
+        <h2>Botões de nível de bloco</h2>
+
+        <div class="d-grid gap-2">
+            <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+            <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+        </div>
     </div>
 
 </body>
