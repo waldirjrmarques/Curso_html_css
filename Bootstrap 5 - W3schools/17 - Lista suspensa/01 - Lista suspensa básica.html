@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Lista suspensa básica
+            Um menu suspenso é um menu alternável que permite ao usuário escolher um valor de uma lista predefinida: 
+            A .dropdown classe indica um menu suspenso.
+            Para abrir o menu suspenso, use um botão ou um link com uma classe de .dropdown-toggle e o data-bs-toggle="dropdown" atributo.
+            Adicione a .dropdown-menu classe a um <div> elemento para realmente construir o menu suspenso. Em seguida, adicione a .dropdown-itemclasse a cada elemento (links ou botões) dentro do menu suspenso.
+
+
+    -->
+    <div class="container  mt-5">
+        <h2>Lista suspensa básica</h2>
+
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item" href="#">Link 1</a></li>
+              <li><a class="dropdown-item" href="#">Link 2</a></li>
+              <li><a class="dropdown-item" href="#">Link 3</a></li>
+            </ul>
+          </div>
+        
+    </div>
+
+</body>
+</html>

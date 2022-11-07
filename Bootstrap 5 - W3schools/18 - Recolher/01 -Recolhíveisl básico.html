@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Recolhíveis básico
+            Recolhíveis são úteis quando você deseja ocultar e mostrar uma grande quantidade de conteúdo:
+            A .collapse classe indica um elemento recolhível (um <div> em nosso exemplo); este é o conteúdo que será mostrado ou ocultado com um clique de um botão.
+            Para controlar (mostrar/ocultar) o conteúdo recolhível, adicione o data-bs-toggle="collapse" atributo a um elemento <a> ou <button>. Em seguida, adicione o data-bs-target="#id"atributo para conectar o botão ao conteúdo recolhível (<div id="demo">).
+            Observação: para elementos <a>, você pode usar o hrefatributo em vez do data-bs-target atributo:
+                        
+    -->
+    <div class="container  mt-5">
+        <h2>Recolhíveis básico</h2>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Recolhíveis básico</button>
+        <div id="demo" class="collapse">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+        
+    </div>
+
+</body>
+</html>
