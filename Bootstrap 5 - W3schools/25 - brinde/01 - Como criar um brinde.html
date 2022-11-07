@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--
+       brindes
+            O componente toast é como uma caixa de alerta que é mostrada apenas por alguns segundos quando algo acontece (ou seja, quando o usuário clica em um botão, envia um formulário etc.).
+
+        Como criar um brinde
+            Para criar um brinde, use a .toast classe e adicione a .toast-header e a .toast-body dentro dela.
+
+            Nota: As torradas ficam ocultas por padrão. Use a .show classe se quiser exibi-la. Para fechá-lo, use um elemento <button> e adicione data-bs-dismiss="toast":    
+    -->
+    <div class="container  mt-5">
+        <h2>Como criar um brinde</h2>
+
+        <div class="toast show">
+            <div class="toast-header">
+              <strong class="me-auto">Toast Header</strong>
+              <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+              <p>Some text inside the toast body</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

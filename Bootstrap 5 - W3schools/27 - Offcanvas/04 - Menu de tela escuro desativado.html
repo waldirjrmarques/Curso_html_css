@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Menu de tela escuro desativado
+            Use a .text-bg-dark classe para criar um menu offcanvas escuro.
+
+            Dica: Também adicionamos a .btn-close-white classe a .btn-close, para criar um botão de fechar branco que fica bem com o fundo escuro:
+    -->
+    <div class="container  mt-5">
+        <h2></h2>
+
+        <div class="offcanvas offcanvas-start text-bg-dark" id="demo">
+            <div class="offcanvas-header">
+              <h1 class="offcanvas-title">Heading</h1>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>Some text lorem ipsum.</p>
+              <p>Some text lorem ipsum.</p>
+              <p>Some text lorem ipsum.</p>
+              <button class="btn btn-secondary" type="button">A Button</button>
+            </div>
+          </div>
+          
+          <div class="container-fluid mt-3">
+            <h3>Dark Offcanvas Sidebar</h3>
+            <p>Use the .text-bg-dark class to create a dark offcanvas menu.</p>
+            <p><strong>Tip:</strong> We have also added the .btn-close-white class to .btn-close, to create a white close button that looks nice with the dark background:</p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+              Open Offcanvas Sidebar
+            </button>
+        </div>
+    </div>
+</body>
+</html>

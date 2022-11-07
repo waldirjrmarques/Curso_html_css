@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <style>
+        body {
+             position: relative; 
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+    <!--
+       Scrollspy / Espião de rolagem
+            Scrollspy é usado para atualizar automaticamente os links em uma lista de navegação com base na posição de rolagem .
+        
+        Como criar um Scrollspy
+            O exemplo a seguir mostra como criar um scrollspy: 
+            
+        Exemplo explicado
+        Adicione data-bs-spy="scroll"ao elemento que deve ser usado como área de rolagem (geralmente esse é o <body>elemento).
+
+        Em seguida, adicione o data-bs-target atributo com um valor do id ou o nome da classe da barra de navegação ( .navbar). Isso é para garantir que a barra de navegação esteja conectada à área rolável.
+
+        Observe que os elementos roláveis ​​devem corresponder ao ID dos links dentro dos itens da lista da barra de navegação ( <div id="section1">matches <a href="#section1">).
+
+        O atributo opcional data-bs-offset especifica o número de pixels a serem deslocados do topo ao calcular a posição da rolagem. Isso é útil quando você sente que os links dentro da barra de navegação alteram o estado ativo muito cedo ou muito cedo ao pular para os elementos roláveis. O padrão é 10 pixels.
+
+        Requer posicionamento relativo: O elemento com data-bs-spy="scroll" requer a propriedade position CSS , com um valor de "relative" para funcionar corretamente.
+    -->
+    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+          <div class="container-fluid">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#section1">Section 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section2">Section 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section3">Section 3</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        
+        <div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+          <h1>Section 1</h1>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        </div>
+        
+        <div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+          <h1>Section 2</h1>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        </div>
+        
+        <div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+          <h1>Section 3</h1>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        </div>
+        
+    </body>    
+</html>

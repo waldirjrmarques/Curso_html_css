@@ -13,18 +13,29 @@
     <!-- bootsrap JavaScript --> 
 
     <style>
-        
+         span {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 6px;
+            background-color: #f9f9f9;
+        } 
     </style>
     <title>Document</title>
 </head>
 <body>
     <!--
-       
+       Flutuar e Clearfix
+        Flutue um elemento para a direita com a .float-end classe ou para a esquerda com .float-start, e limpe os floats com a .clearfix classe:
     -->
     <div class="container  mt-5">
-        <h2></h2>
+        <h2>Flutuar e Clearfix</h2>
 
-        
+        <div class="clearfix">
+            <span class="border border-dark float-start">Flutuar para a esquerda</span>
+            <span class="border border-dark float-end">Flutuar à direita</span>
+        </div>
+
     </div>
 </body>
 </html>

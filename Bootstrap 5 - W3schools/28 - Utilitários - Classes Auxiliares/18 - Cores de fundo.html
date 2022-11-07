@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--
+       Cores de fundo
+            As classes para cores de fundo são : .bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondarye .bg-dark..bg-light
+    -->
+    <div class="container  mt-5">
+        <h2>Cores de fundo</h2>
+
+            <div class=" mt-3 bg-primary p-3"></div>
+            <div class=" mt-3 bg-success p-3"></div>
+            <div class=" mt-3 bg-info p-3"></div>
+            <div class=" mt-3 bg-warning p-3"></div>
+            <div class=" mt-3 bg-danger p-3"></div>
+            <div class=" mt-3 bg-secondary p-3"></div>
+            <div class=" mt-3 bg-dark p-3"></div>
+            <div class=" mt-3 bg-light p-3"></div>
+
+    </div>
+
+    <!--
+            As classes acima não funcionam bem com texto, ou pelo menos você precisa especificar uma classe adequada para obter a cor de texto correta para cada plano de fundo. .bg-color.text-color
+
+            No entanto, você pode usar as classes e o Bootstrap manipulará automaticamente a cor de texto apropriada para cada cor de fundo:.text-bg-color
+        -->
+        <div class="container mt-3"> 
+            <h2>Cor de fundo com cor de texto contrastante</h2>
+            <p class="text-bg-primary">Este texto é importante..</p>
+            <p class="text-bg-success">Este texto indica sucesso..</p>
+            <p class="text-bg-info">Este texto representa algumas informações..</p>
+            <p class="text-bg-warning">Este texto representa um aviso..</p>
+            <p class="text-bg-danger">Este texto representa perigo.</p>
+            <p class="text-bg-secondary">Cor de fundo secundária..</p>
+            <p class="text-bg-dark">Cor de fundo cinza escuro.</p>
+            <p class="text-bg-light">Cor de fundo cinza claro.</p>
+        </div>
+    
+</body>
+</html>

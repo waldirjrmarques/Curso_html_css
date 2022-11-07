@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <style>
+       span {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 6px;
+            background-color: #f9f9f9;
+        } 
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--
+       Utilitários / Classes Auxiliares
+        O Bootstrap 5 tem muitas classes utilitárias/auxiliares para estilizar rapidamente os elementos sem usar nenhum código CSS.
+
+        border
+            Use as border classes para adicionar ou remover bordas de um elemento:
+    -->
+    <div class="container  mt-5">
+        <h2>border</h2>
+       
+        <span class="border"></span> <!--todos com borda-->
+        <span class="border border-0"></span> <!-- remove todas as bordas-->
+        <span class="border border-top-0"></span> <!--remove borda topo -->
+        <span class="border border-end-0"></span> <!-- remove borda lado direito -->
+        <span class="border border-bottom-0"></span> <!-- remove borda baixo-->
+        <span class="border border-start-0"></span> <!-- remove borda lado esquerdo-->
+        <br>
+        
+        <span class="border-top"></span> <!-- Adiciona borda cima-->
+        <span class="border-end"></span> <!-- Adiciona borda lado direito-->
+        <span class="border-bottom"></span> <!-- Adiciona borda baixo-->
+        <span class="border-start"></span> <!-- Adiciona borda lado esquerdo-->
+      
+    </div>
+</body>
+</html>

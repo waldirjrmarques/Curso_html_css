@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--
+       Abra um brinde
+            Para mostrar um brinde com o clique de um botão, você deve inicializá-lo com JavaScript: selecione o elemento especificado e chame o toast()método.
+
+            O código a seguir mostrará todos os "brindes" no documento quando você clicar em um botão:
+    -->
+    <div class="container  mt-5">
+        <h2></h2>
+
+        <button type="button" class="btn btn-primary" id="toastbtn">Show Toast</button>
+  
+        <div class="toast">
+            <div class="toast-header">
+            <strong class="me-auto">Toast Header</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+            <p>Some text inside the toast body</p>
+            </div>
+        </div>
+        
+        <script>
+        document.getElementById("toastbtn").onclick = function() {
+        var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+        var toastList = toastElList.map(function(toastEl) {
+            return new bootstrap.Toast(toastEl)
+        })
+        toastList.forEach(toast => toast.show()) 
+        }
+        </script>
+        
+    </div>
+</body>
+</html>

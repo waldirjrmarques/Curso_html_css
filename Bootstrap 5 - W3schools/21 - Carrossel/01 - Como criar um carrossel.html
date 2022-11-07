@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Como criar um carrossel
+            O exemplo a seguir mostra como criar um carrossel básico com indicadores e controles:   
+            
+            Exemplo explicado
+                Uma descrição do que cada classe do exemplo acima faz:
+
+                .carousel	Cria um carrossel
+
+                .carousel-indicators	Adiciona indicadores para o carrossel. Estes são os pequenos pontos na parte inferior de cada slide (que indicam quantos slides existem no carrossel e qual slide o usuário está visualizando no momento)
+
+                .carousel-inner	Adiciona slides ao carrossel
+
+                .carousel-item	Especifica o conteúdo de cada slide
+
+                .carousel-control-prev	Adiciona um botão esquerdo (anterior) ao carrossel, que permite ao usuário voltar entre os slides
+
+                .carousel-control-next	Adiciona um botão direito (próximo) ao carrossel, que permite ao usuário avançar entre os slides
+
+                .carousel-control-prev-icon	 Usado junto com .carousel-control-prev para criar um botão "anterior"
+
+                .carousel-control-next-icon	 Usado junto com .carousel-control-next para criar um botão "próximo"
+
+                .slide	Adiciona uma transição CSS e efeito de animação ao deslizar de um item para o próximo. Remova esta classe se você não quiser este efeito
+    -->
+    <div class="container  mt-5">
+        <h2>Como criar um carrossel</h2>
+
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicadores/pontos -->
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            
+            <!-- Apresentação de slides/carousel -->
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="la.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="chicago.jpg" alt="Chicago" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="ny.jpg" alt="New York" class="d-block" style="width:100%">
+            </div>
+            </div>
+            
+            <!-- Controle icons esquerdo e direito -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+          
+    </div>
+</body>
+</html>

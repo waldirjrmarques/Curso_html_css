@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Posicionando Popovers
+            Por padrão, o popover aparecerá no lado direito do elemento.
+
+            Use o data-bs-placement atributo para definir a posição do popover na parte superior, inferior, esquerda ou direita do elemento:
+
+            Observação: os atributos de veiculação não funcionam conforme o esperado se não houver espaço suficiente para eles. Por exemplo: se você usar o posicionamento superior no topo de uma página (onde não há espaço para ele), ele exibirá o popover abaixo do elemento ou à direita (onde houver espaço para ele).
+    -->
+    <div class="container  mt-5">
+        <h2></h2>
+
+            <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="top" data-content="Content">Top</a>
+
+            <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="bottom" data-content="Content">Bottom</a>
+
+            <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="left" data-content="Content">Left</a>
+            
+            <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="right" data-content="Content">Right</a>
+            
+            <script>
+                var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+                var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl)
+                })
+            </script>
+
+    </div>
+</body>
+</html>

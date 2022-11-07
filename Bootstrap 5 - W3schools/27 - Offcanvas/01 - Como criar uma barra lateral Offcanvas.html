@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Offcanvas
+            Offcanvas é semelhante aos modais (ocultos por padrão e mostrados quando ativados), exceto que geralmente é usado como um menu de navegação da barra lateral.
+        
+        Como criar uma barra lateral Offcanvas
+            O exemplo a seguir mostra como criar uma barra lateral offcanvas: 
+            
+        Exemplo explicado
+            A .offcanvasclasse cria a barra lateral offcanvas.
+
+            A .offcanvas-start classe posiciona o offcanvas e o torna 400px de largura. Veja os exemplos abaixo para mais classes de posicionamento.
+
+            A .offcanvas-title classe garante margens e altura de linha adequadas.
+
+            Em seguida, adicione seu conteúdo dentro da .offcanvas-body classe.
+
+            Para abrir a barra lateral offcanvas, você deve usar um <button>ou um <a>elemento que aponte para o id do .offcanvascontainer ( #demono nosso exemplo).
+
+            Para abrir a barra lateral offcanvas com um <a>elemento, você pode apontar #democom o atributo href, em vez do data-bs-target atributo.    
+    -->
+    <div class="container  mt-5">
+        <h2>Como criar uma barra lateral Offcanvas</h2>
+
+        <!-- Offcanvas Sidebar -->
+        <div class="offcanvas offcanvas-start" id="demo">
+            <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Heading</h1>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+            <p>Some text lorem ipsum.</p>
+            <p>Some text lorem ipsum.</p>
+            <button class="btn btn-secondary" type="button">A Button</button>
+            </div>
+        </div>
+        
+        <!-- Button to open the offcanvas sidebar -->
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+            Open Offcanvas Sidebar
+        </button>
+
+    </div>
+</body>
+</html>

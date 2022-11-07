@@ -19,12 +19,21 @@
 </head>
 <body>
     <!--
-       
+        Popover Hoverable
+            Dica: Se você quiser que o popover seja exibido ao mover o ponteiro do mouse sobre o elemento, use o data-bs-trigger atributo com um valor de " hover":
     -->
     <div class="container  mt-5">
-        <h2></h2>
+        <h2>Fechando Popovers</h2>
 
-        
+        <a href="#" title="Header" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Popover text">Hover over me</a>
+
+        <script>
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+            })
+        </script>
+
     </div>
 </body>
 </html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Popovers
+            O componente Popover é semelhante às dicas de ferramentas; é uma caixa pop-up que aparece quando o usuário clica em um elemento. A diferença é que o popover pode conter muito mais conteúdo.
+        
+        Como criar um popover
+            Para criar um popover, adicione o data-bs-toggle="popover" atributo a um elemento.
+
+            Use o titleatributo para especificar o texto do cabeçalho do popover e use o data-bs-content atributo para especificar o texto que deve ser exibido dentro do corpo do popover:
+            
+            Nota: Os popovers devem ser inicializados com JavaScript para funcionar.
+
+            O código a seguir habilitará todos os popovers no documento:
+    -->
+    <div class="container  mt-5">
+        <h2>Como criar um popover</h2>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Popover Header" data-bs-content="Some content inside the popover">Toggle popover</button>
+        
+        <script>
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+              return new bootstrap.Popover(popoverTriggerEl)
+            })
+        </script>
+    </div>
+</body>
+</html>
