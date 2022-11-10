@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <style>
+        .col{
+            background-color: rgb(206, 220, 235);
+            margin: 10px;    
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Estrutura Básica de uma Grade Bootstrap 5
+            A seguir está uma estrutura básica de uma grade do Bootstrap 5:
+    -->
+    <div class="container  mt-5">
+        <h2></h2>
+
+            <!--ex01 linha 1-->
+                <div class="row">
+                    <div class="col-sm-4">c1</div>
+                    <div class="col-md-4">c2</div>
+                    <div class="col-lg-4">c2</div>
+                    
+                    <!--
+                        Primeiro exemplo: crie uma linha ( <div class="row">). Em seguida, adicione o número desejado de colunas (tags com .col-*-*classes apropriadas). A primeira estrela (*) representa a capacidade de resposta: sm, md, lg, xl ou xxl, enquanto a segunda estrela representa um número, que deve somar 12 para cada linha.
+                    -->
+                </div>
+
+                <!--ex01 linha 2-->
+                <div class="row">
+                    <div class="col 33,33%">c1</div>
+                    <div class="col 33,33%">c2</div>
+                    <div class="col 33,33%">c3</div>
+                    <!--
+                        Segundo exemplo: em vez de adicionar um número a cada col, deixe o bootstrap manipular o layout, para criar colunas de largura igual: dois "col"elementos = 50% de largura para cada coluna, enquanto três colunas = 33,33% de largura para cada coluna. Quatro colunas = 25% de largura, etc. Você também pode usar .col-sm|md|lg|xl|xxl para tornar as colunas responsivas.
+                    -->
+                </div>
+                
+                <!--ex01 linha 3-->
+                <div class="row">
+                    <div class="col">c1</div>
+                    <div class="col">c2</div>
+                    <div class="col">c3</div>
+                    <!--
+                        deixe o Bootstrap lidar automaticamente com o layout
+                    -->
+                </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Caixas de seleção
+            As caixas de seleção são usadas se você quiser que o usuário selecione qualquer número de opções de uma lista de opções predefinidas.
+
+            Exemplo explicado
+                Para estilizar caixas de seleção, use um elemento wrapper com class="form-check"para garantir margens adequadas para rótulos e caixas de seleção.
+
+                Em seguida, adicione a .form-check-label classe para rotular elementos e .form-check-input estilizar corretamente as caixas de seleção dentro do .form-check contêiner.
+
+                Use o checked atributo se desejar que a caixa de seleção seja marcada por padrão.
+    -->
+    <div class="container  mt-5">
+        <h2></h2>
+        
+        <form action="/action_page.php">
+
+            <!--opção 01-->
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+              <label class="form-check-label" for="check1">Option 1</label>
+
+            </div>
+
+            <!--opção 02-->
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+              <label class="form-check-label" for="check2">Option 2</label>
+            </div>
+
+            <!--opção 03-->
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" disabled>
+              <label class="form-check-label">Option 3</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+</html>

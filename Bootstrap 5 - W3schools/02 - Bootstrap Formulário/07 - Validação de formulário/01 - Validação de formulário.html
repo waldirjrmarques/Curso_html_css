@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Validação de formulário
+            Você pode usar diferentes classes de validação para fornecer feedback valioso aos usuários. Adicione .was-validated ou .needs-validation ao <form>elemento, dependendo se você deseja fornecer feedback de validação antes ou depois de enviar o formulário. Os campos de entrada terão uma borda verde (válida) ou vermelha (inválida) para indicar o que está faltando no formulário. Você também pode adicionar uma mensagem .valid-feedback ou .invalid-feedback para informar explicitamente ao usuário o que está faltando ou o que precisa ser feito antes de enviar o formulário.
+
+    -->
+    <div class="container  mt-5">
+        <h2>Validação de formulário</h2>
+
+        <form action="/action_page.php" class="was-validated">
+            <div class="mb-3 mt-3">
+              <label for="uname" class="form-label">Nome do usuário:</label>
+              <input type="text" class="form-control" id="uname" placeholder="Informar Nome do Usuário" name="uname" required>
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor, preencha este campo.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="pwd" class="form-label">Senha:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Informar Senha" name="pswd" required>
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor, preencha este campo.</div>
+            </div>
+
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+              <label class="form-check-label" for="myCheck">Concordo com o blabla?</label>
+              <div class="valid-feedback">Válido</div>
+              <div class="invalid-feedback">Marque esta caixa de seleção para continuar.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+    </div>
+</body>
+</html>

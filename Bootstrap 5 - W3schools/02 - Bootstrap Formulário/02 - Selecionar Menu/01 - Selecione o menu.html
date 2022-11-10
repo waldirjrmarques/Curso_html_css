@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--
+      Selecione o menu
+
+    -->
+    <div class="container  mt-5">
+        <h2>Selecione o menu (selecione um):</h2>
+
+        <form action="/action_page.php">
+            <label for="sel1" class="form-label">Selecione a lista (selecione uma)::</label>
+            <select class="form-select" id="sel1" name="sellist1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+        
+    </div>
+
+    <!--
+        Os menus de seleção são usados ​​se você deseja permitir que o usuário escolha entre várias opções.
+        Para estilizar um menu de seleção no Bootstrap 5, adicione a .form-selectclasse ao elemento <select>:
+    -->
+    <div class="container  mt-5">
+        <h2>Menu de seleção múltipla (segure ctrl ou shift (ou arraste com o mouse) para selecionar mais de um):</h2>
+
+        <form action="/action_page.php">
+            <label for="sel2" class="form-label">Lista de seleção múltipla (segure shift para selecionar mais de uma):</label>
+            <select multiple class="form-select" id="sel2" name="sellist2">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form> 
+
+    </div>
+</body>
+</html>

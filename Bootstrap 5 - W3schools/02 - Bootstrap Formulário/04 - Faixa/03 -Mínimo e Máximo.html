@@ -19,12 +19,17 @@
 </head>
 <body>
     <!--
-        
+        Mínimo e Máximo
+            Por padrão, o valor mínimo é 0 e o valor máximo é 100. Você pode usar o atributo min e/ou alterá-lo:max
     -->
     <div class="container  mt-5">
-        <h2></h2>
+        <h2>Mínimo e Máximo</h2>
 
-        
+        <form action="/action_page.php">
+            <label for="customRange" class="form-label">Custom range</label>
+            <input type="range" class="form-range" id="customRange" name="points" min="0" max="4">
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
 
     </div>
 </body>

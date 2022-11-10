@@ -19,13 +19,21 @@
 </head>
 <body>
     <!--
-        
-    -->
+        Chaves de alternância
+            Se você quiser que sua caixa de seleção seja estilizada como uma chave de alternância, use a .form-switch classe junto com o .form-check contêiner:
+                -->
     <div class="container  mt-5">
-        <h2></h2>
+        <h2>Chaves de alternância</h2>
 
-        
+        <form action="/action_page.php">
+            <div class="form-check form-switch"><!---->
+              <input class="form-check-input" type="checkbox" id="mySwitch" name="Modo Escuro" value="yes" checked>
+              <label class="form-check-label" for="mySwitch">Dark Mode</label>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
 
     </div>
+
 </body>
 </html>

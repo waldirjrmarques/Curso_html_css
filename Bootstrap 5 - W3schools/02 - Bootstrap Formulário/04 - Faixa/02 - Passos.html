@@ -19,13 +19,18 @@
 </head>
 <body>
     <!--
-        
+        Passos
+            Por padrão, o intervalo entre os números do intervalo é 1. Você pode alterá-lo usando o step atributo:
     -->
     <div class="container  mt-5">
-        <h2></h2>
+        <h2>Passos</h2>
 
+        <form action="/action_page.php">
+            <label for="customRange" class="form-label">Custom range</label>
+            <input type="range" class="form-range" id="customRange" name="points" step="5">
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>  
         
-
     </div>
 </body>
 </html>

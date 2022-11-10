@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Flexbox
+            A maior diferença entre o Bootstrap 3 e o Bootstrap 4 e 5 é que o Bootstrap 5 agora usa flexbox, em vez de floats, para lidar com o layout.
+
+            O Módulo de Layout de Caixa Flexível, torna mais fácil projetar uma estrutura de layout responsiva flexível sem usar flutuação ou posicionamento. Se você é novo em flex, pode ler sobre isso em nosso Tutorial CSS Flexbox .
+
+            Nota: Flexbox não é compatível com IE9 e versões anteriores.
+
+            Se você precisar de suporte ao IE8-9, use o Bootstrap 3. É a versão mais estável do Bootstrap e ainda é suportada pela equipe para correções críticas de bugs e alterações na documentação. No entanto, nenhum novo recurso será adicionado a ele.
+
+            Para criar um contêiner flexbox e transformar filhos diretos em itens flexíveis, use a d-flex classe:
+
+            Para criar um contêiner flexbox inline, use a d-inline-flex classe:
+    -->
+    <div class="container  mt-5">
+        <h2>Flexbox d-flex</h2>
+
+        <div class="d-flex p-3 bg-secondary text-white">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+
+    </div>
+
+
+    <!-- Para criar um contêiner flexbox inline, use a d-inline-flex classe: -->
+    <div class="container  mt-5">
+        <h2>Flexbox d-inline-flex</h2>
+
+        <div class="d-inline-flex p-3 bg-secondary text-white">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

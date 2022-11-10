@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--
+       Margens automáticas
+            Adicione facilmente margens automáticas a itens flexíveis com .ms-auto(empurre os itens para a direita) ou usando .me-auto(empurre os itens para a esquerda):
+                -->
+    <div class="container  mt-5">
+        <h2>Margens automáticas .ms-auto</h2>
+
+           
+            <div class="d-flex bg-secondary">
+                <div class="p-2 ms-auto bg-info">Flex item 1</div><!---->
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div>
+    </div>
+
+    <div class="container  mt-5">
+        <h2>Margens automáticas .me-auto</h2>
+            
+            <div class="d-flex bg-secondary">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 me-auto bg-primary">Flex item 3</div><!---->
+            </div>
+    </div>
+</body>
+</html>
