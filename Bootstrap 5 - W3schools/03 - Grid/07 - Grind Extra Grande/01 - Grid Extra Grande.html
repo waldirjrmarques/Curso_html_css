@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Exemplo de grade extra grande
+            No capítulo anterior, apresentamos um exemplo de grid com classes para dispositivos de pequeno, médio e grande porte. Usamos duas divs (colunas) e demos a elas uma divisão de 25%/75% em dispositivos pequenos e uma divisão de 50%/50% em dispositivos médios e uma divisão de 33%/66% em dispositivos grandes:
+
+            Mas em dispositivos xlarge o design pode ser melhor com uma divisão de 20%/80%.
+
+            Dispositivos extragrandes são definidos como tendo uma largura de tela de 1200 pixels e acima .
+
+            Para dispositivos xlarge, usaremos as .col-xl-*classes:
+
+            O exemplo a seguir resultará em uma divisão de 25%/75% em dispositivos pequenos, uma divisão de 50%/50% em dispositivos médios, uma divisão de 33%/66% em dispositivos grandes e uma divisão de 20%/80% em xlarge e xxlarge dispositivos. Em dispositivos extra pequenos, ele empilhará automaticamente (100%):
+
+            Nota: Certifique-se de que a soma sempre soma 12.
+    -->
+    <div class="container  mt-5">
+        <h2>Exemplo de grade extra grande</h2>
+        <img src="Grind_extra_grande.PNG" class="mx-auto d-block mb-5" alt="Cinque Terre" width="" height="">
+
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 bg-primary text-white">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+              <br>
+              <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 bg-dark text-white">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              </div>
+            </div>
+        </div>
+    
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Exemplo de grade média
+            No capítulo anterior, apresentamos um exemplo de grid com classes para pequenos dispositivos. Usamos duas divs (colunas) e demos a elas uma divisão de 25%/75%:
+
+            Mas em dispositivos médios o design pode ser melhor com uma divisão de 50%/50%.
+
+            Dispositivos médios são definidos como tendo uma largura de tela de 768 pixels a 991 pixels .
+
+            Para dispositivos médios, usaremos as .col-md-* classes:
+
+            O exemplo a seguir resultará em uma divisão de 25%/75% em dispositivos pequenos e uma divisão de 50%/50% em dispositivos médios (e grandes, xlarge e xxlarge). Em dispositivos extra pequenos, ele empilhará automaticamente (100%):
+
+            Observação: certifique-se de que a soma seja 12 ou menos (não é necessário usar todas as 12 colunas disponíveis):
+
+
+    -->
+    <div class="container  mt-5">
+        <h2>Exemplo de grade média</h2>
+        <img src="Grid media.PNG" class="mx-auto d-block mb-5" alt="Cinque Terre" width="" height="">
+
+        <div class="row">
+            <div class="col-sm-3 col-md-6 bg-primary text-white">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="col-sm-9 col-md-6 bg-dark text-white">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </div>
+        </div>
+
+    </div>
+    <!--
+        Usando apenas mídia
+        No exemplo abaixo, especificamos apenas a .col-md-6classe (sem .col-sm-*). Isso significa que dispositivos médios, grandes, extragrandes e XXL dividirão 50% / 50% - porque a classe aumenta. No entanto, para dispositivos pequenos e extra pequenos, ele será empilhado verticalmente (100% de largura):
+    -->
+    <div class="container  mt-5">
+        <h2>Usando apenas mídia</h2>
+        
+        <div class="row">
+            <div class="col-md-6 bg-primary text-white">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="col-md-6 bg-dark text-white">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </div>
+        </div>
+
+    </div>
+
+    <!--
+      Colunas de layout automático
+            No Bootstrap 5, há uma maneira fácil de criar colunas de largura igual para todos os dispositivos: basta remover o número .col-md-*e usar a .col-mdclasse apenas em um número especificado de elementos col . O Bootstrap reconhecerá quantas colunas existem e cada coluna terá a mesma largura.
+
+            Se o tamanho da tela for menor que 768px , as colunas serão empilhadas horizontalmente:
+    -->
+    <div class="container  mt-5">
+        <h2>Colunas de layout automático</h2>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md bg-primary text-white">1 of 2</div>
+                <div class="col-md bg-dark text-white">2 of 2</div>
+            </div>  
+        </div>
+
+        <br>
+          
+        <div class="container">
+            <div class="row">
+                <div class="col-md bg-primary text-white">1 of 4</div>
+                <div class="col-md bg-dark text-white">2 of 4</div>
+                <div class="col-md bg-primary text-white">3 of 4</div>
+                <div class="col-md bg-dark text-white">4 of 4</div>
+            </div>  
+        </div>
+
+    </div>
+
+</body>
+</html>

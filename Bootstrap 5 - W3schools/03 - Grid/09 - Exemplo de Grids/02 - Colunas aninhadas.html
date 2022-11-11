@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Colunas aninhadas
+            O exemplo a seguir mostra como criar um layout de duas colunas, com outras duas colunas dentro de uma das colunas:
+    -->
+    <div class="container  mt-5">
+        <h2>Colunas aninhadas</h2>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8 bg-warning p-4">
+                    .col-8
+                    <div class="row">
+                        <div class="col-6 bg-light p-2">.col-6</div>
+                        <div class="col-6 bg-secondary p-2">.col-6</div>
+                    </div>
+                </div>
+              <div class="col-4 bg-success p-4">.col-4</div>
+            </div>
+        </div>  
+        
+    
+    </div>
+</body>
+</html>

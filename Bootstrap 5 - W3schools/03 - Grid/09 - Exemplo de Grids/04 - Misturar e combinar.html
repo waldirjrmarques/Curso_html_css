@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Misturar e combinar
+    -->
+    <div class="container-fluid mt-3">
+        <h1>Misturar e combinar</h1>
+        <p>Redimensione a janela do navegador para ver o efeito.</p> 
+
+        <p>Este exemplo demonstra uma divisão de 50%/50% em dispositivos extra pequenos e uma divisão de 75%/25% em dispositivos maiores.</p>    
+
+        <div class="container-fluid">     
+          <div class="row">
+                <div class="col-6 col-sm-9 bg-success">col-6 col-sm-9</div>
+                <div class="col-6 col-sm-3 bg-warning">col-6 col-sm-3</div>
+          </div>
+        </div>
+
+        <br>
+
+        <p>Este exemplo demonstra uma divisão de 58%/42% em dispositivos extra pequenos, pequenos e médios e uma divisão de 66,3%/33,3% em dispositivos grandes e extragrandes.</p>   
+
+        <div class="container-fluid">     
+            <div class="row">
+                    <div class="col-7 col-lg-8 bg-success">col-7 col-lg-8</div>
+                    <div class="col-5 col-lg-4 bg-warning">col-5 col-lg-4</div>
+            </div>
+        </div>
+
+        <br>
+
+        <p>Este exemplo demonstra uma divisão de 25%/75% em dispositivos pequenos, uma divisão de 50%/50% em dispositivos médios e uma divisão de 33%/66% em dispositivos grandes e extragrandes. Em dispositivos extra pequenos, ele será empilhado automaticamente (100%).</p>      
+        <div class="container-fluid">     
+            <div class="row">
+                    <div class="col-sm-3 col-md-6 col-lg-4 bg-success">col-sm-3 col-md-6 col-lg-4</div>
+                    <div class="col-sm-9 col-md-6 col-lg-8 bg-warning">col-sm-9 col-md-6 col-lg-8</div>
+            </div>
+        </div>
+      </div>
+      
+</body>
+</html>

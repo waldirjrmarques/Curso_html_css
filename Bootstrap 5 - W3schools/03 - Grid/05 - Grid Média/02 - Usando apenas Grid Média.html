@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluir Bootstrap 5 de um CDN-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- bootsrap JavaScript --> 
+
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+   
+    <!--
+        Usando apenas Grid Média
+        No exemplo abaixo, especificamos apenas a .col-md-6classe (sem .col-sm-*). Isso significa que dispositivos médios, grandes, extragrandes e XXL dividirão 50% / 50% - porque a classe aumenta. No entanto, para dispositivos pequenos e extra pequenos, ele será empilhado verticalmente (100% de largura):
+    -->
+    <div class="container  mt-5">
+        <h2>Usando apenas mídia</h2>
+        
+        <div class="row">
+            <div class="col-md-6 bg-primary text-white">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="col-md-6 bg-dark text-white">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
