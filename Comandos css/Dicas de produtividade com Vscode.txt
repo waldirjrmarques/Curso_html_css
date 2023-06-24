@@ -8,3 +8,7 @@
         ctrl + espaço 
 
 * Segurar alt e clicar ou escrever para auteração dos codigos.	
+
+* Colocar codico css cOmo comentário
+	1° - Selecionar o codigo
+	2° - Talho Ctrl + k + c	
