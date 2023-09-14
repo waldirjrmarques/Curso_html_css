@@ -12,3 +12,9 @@
 * Colocar codico css cOmo comentário
 	1° - Selecionar o codigo
 	2° - Talho Ctrl + k + c	
+
+*Selecionar as mesmas tags
+    ctrl + d
+
+*Comentario
+ Seleciona o local que deseja comentar, use Shit + Alt + A, que independe se for em HTML, CSS ou JS vai dar certo.
